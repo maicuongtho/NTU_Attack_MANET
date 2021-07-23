@@ -1,0 +1,23 @@
+<scenario>
+    <at t="8">
+        <shutdown module="H[0]"/>
+    </at>
+    <at t="10">
+        <shutdown module="H[5]"/>
+    </at>
+    <at t="10">
+        <shutdown module="H[10]"/>
+    </at>
+    <at t="12">
+        <shutdown module="H[15]"/>
+    </at>
+    <at t="14">
+        <shutdown module="H[20]"/>
+    </at>
+    <at t="16">
+        <shutdown module="H[6]"/>
+    </at>
+    <at t="18">
+        <shutdown module="H[4]"/>
+    </at>
+</scenario>

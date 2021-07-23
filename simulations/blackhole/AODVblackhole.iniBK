@@ -1,0 +1,116 @@
+[General]
+network = AODVblackhole
+sim-time-limit = 20s
+num-rngs = 3
+**.mobility.rng-0 = 1
+**.wlan[*].mac.rng-0 = 2
+
+# channel physical parameters
+**.wlan[*].typename = "AckingWirelessInterface"
+**.wlan[*].bitrate = 2Mbps
+**.wlan[*].mac.headerLength = 23B
+**.wlan[*].radio.typename = "UnitDiskRadio"
+**.wlan[*].radio.transmitter.headerLength = 96b
+**.wlan[*].radio.transmitter.communicationRange = 250m
+**.wlan[*].radio.transmitter.interferenceRange = 0m
+**.wlan[*].radio.transmitter.detectionRange = 0m
+**.wlan[*].radio.receiver.ignoreInterference = true
+
+*.numHosts = 30   # 20 node in total
+*.numSenders=10
+*.numReceivers=10
+# mobility
+**.host[*].mobility.typename = "StationaryMobility"
+**.mobility.constraintAreaMinZ = 0m
+**.mobility.constraintAreaMaxZ = 0m
+**.mobility.constraintAreaMinX = 5m
+**.mobility.constraintAreaMinY = 5m
+**.mobility.constraintAreaMaxX = 995m
+**.mobility.constraintAreaMaxY = 795m
+
+
+*.visualizer.sceneVisualizer.descriptionFigure = "title"
+*.visualizer.physicalLinkVisualizer.displayLinks = false
+#*.visualizer.dataLinkVisualizer.displayLinks = true
+*.visualizer.networkRouteVisualizer.displayRoutes = true
+#*.visualizer.*LinkVisualizer.lineShift = 0
+*.visualizer.networkRouteVisualizer.lineShift = 0
+#*.visualizer.networkRouteVisualizer.packetFilter = "UDPData*"
+#*.visualizer.physicalLinkVisualizer.packetFilter = "UDPData*"
+
+# Sender and Receiver config
+
+*.sender[*].numApps = 1
+*.sender[*].app[0].typename = "UdpBasicApp"
+*.sender[*].app[0].destPort = 1000
+*.sender[*].app[0].sendInterval = 1s
+*.sender[*].app[0].startTime = 0s
+*.sender[*].app[0].messageLength = 512Byte
+*.sender[*].app[0].packetName = "UDPdata"
+*.receiver[*].numApps = 1
+*.receiver[*].app[0].typename = "UdpSink"
+*.receiver[*].app[0].localPort = 1000
+
+*.sender[0].app[0].destAddresses = "receiver[0]"
+*.sender[1].app[0].destAddresses = "receiver[1]"
+*.sender[2].app[0].destAddresses = "receiver[2]"
+*.sender[3].app[0].destAddresses = "receiver[3]"
+*.sender[4].app[0].destAddresses = "receiver[4]"
+*.sender[5].app[0].destAddresses = "receiver[5]"
+*.sender[6].app[0].destAddresses = "receiver[6]"
+*.sender[7].app[0].destAddresses = "receiver[7]"
+*.sender[8].app[0].destAddresses = "receiver[8]"
+*.sender[9].app[0].destAddresses = "receiver[9]"
+
+
+#
+#**.aodv.activeRouteTimeout = 2s
+#*.scenarioManager.script = xmldoc("blackholerActive_deactive.xml")
+
+
+# lifecycle
+**.hasStatus = true
+
+[Config Static-blackhole]
+description = routing without mobility
+*.host[*].wlan[*].radio.transmitter.communicationRange = 250m
+*.sender[*].wlan[*].radio.transmitter.communicationRange = 250m
+*.receiver[*].wlan[*].radio.transmitter.communicationRange = 250m
+*.ntu_Blackholer.wlan[*].radio.transmitter.communicationRange = 250m
+
+[Config IPv4SlowMobility-blackhole]
+description = Nodes with low speed mobile nodes
+extends = Static-blackhole
+# mobility
+**.aodv.activeRouteTimeout = 3s
+**.*.mobility.typename = "MassMobility"
+**.*.mobility.changeInterval = normal(5s, 0.1s)
+**.*.mobility.angleDelta = normal(0deg, 30deg)
+**.*.mobility.speed = normal(2mps, 0.01mps)
+
+
+[Config IPv4ModerateFastMobility-blackhole]
+description = two fixed communicating nodes with moderate speed mobile nodes
+extends = IPv4SlowMobility-blackhole
+# mobility
+**.aodv.activeRouteTimeout = 3s
+**.host[*].mobility.speed = normal(8mps, 0.01mps)
+
+[Config IPv4FastMobility-blackhole]
+description = two fixed communicating nodes with high speed mobile nodes
+extends = IPv4SlowMobility-blackhole
+# mobility
+**.aodv.activeRouteTimeout = 3s
+**.host[*].mobility.speed = normal(15mps, 0.01mps)
+
+[Config Dynamic-blackhole]
+description = one node is shut down and restarted trigger route changes
+extends = Static-blackhole
+*.host[*].hasStatus = true
+*.scenarioManager.script = xmldoc("dynamic.xml")
+
+[Config MoreDynamic-blackhole]
+description = some nodes are shut down trigger route changes
+extends = Static-blackhole
+*.host[*].hasStatus = true
+*.scenarioManager.script = xmldoc("moreDynamic.xml")

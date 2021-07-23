@@ -1,0 +1,553 @@
+version 2
+run twoBH_AODV20_Mobility_0mps-0-20210416-16:20:33-2830
+attr configname twoBH_AODV20_Mobility_0mps
+attr datetime 20210416-16:20:33
+attr experiment twoBH_AODV20_Mobility_0mps
+attr inifile AODV20_2bh.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AODV20_2bh
+attr processid 2830
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.H*.mobility.typename "\"MassMobility\""
+param **.S*.mobility.typename "\"MassMobility\""
+param **.BH*.mobility.typename "\"MassMobility\""
+param **.*.mobility.changeInterval "normal(5s, 0.1s)"
+param **.*.mobility.angleDelta "normal(0deg, 30deg)"
+param **.*.mobility.speed "normal(0mps, 0.01mps)"
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.headerLength 96b
+param **.wlan[*].radio.transmitter.communicationRange 250m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param **.host[*].mobility.typename "\"StationaryMobility\""
+param **.mobility.constraintAreaMinZ 0m
+param **.mobility.constraintAreaMaxZ 0m
+param **.mobility.constraintAreaMinX 10m
+param **.mobility.constraintAreaMinY 10m
+param **.mobility.constraintAreaMaxX 1000m
+param **.mobility.constraintAreaMaxY 700m
+param *.visualizer.sceneVisualizer.descriptionFigure "\"title\""
+param *.S*.numApps 1
+param *.S*.app[0].typename "\"UdpBasicApp\""
+param *.S*.app[0].destPort 1000
+param *.S*.app[0].sendInterval 0.25s
+param *.S*.app[0].startTime 0s
+param *.S*.app[0].messageLength 512Byte
+param *.S*.app[0].packetName "\"UDPdata\""
+param *.Bs1.numApps 1
+param *.Bs1.app[0].typename "\"UdpSink\""
+param *.Bs1.app[0].localPort 1000
+param *.Bs2.numApps 1
+param *.Bs2.app[0].typename "\"UdpSink\""
+param *.Bs2.app[0].localPort 1000
+param *.S1.app[0].destAddresses "\"Bs1\""
+param *.S2.app[0].destAddresses "\"Bs1\""
+param *.S3.app[0].destAddresses "\"Bs2\""
+param *.S4.app[0].destAddresses "\"Bs2\""
+param *.S5.app[0].destAddresses "\"Bs1\""
+param **.hasStatus true
+
+vector 0 AODV20_2bh.Bs1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 AODV20_2bh.S5.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 AODV20_2bh.S1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 AODV20_2bh.S2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 AODV20_2bh.S3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 AODV20_2bh.S4.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 AODV20_2bh.H1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 AODV20_2bh.H2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 AODV20_2bh.H3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 AODV20_2bh.H4.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 10 AODV20_2bh.H5.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 AODV20_2bh.H6.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 12 AODV20_2bh.H7.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 AODV20_2bh.H8.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 14 AODV20_2bh.H9.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 AODV20_2bh.H10.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 16 AODV20_2bh.H11.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 AODV20_2bh.H12.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 18 AODV20_2bh.H13.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 AODV20_2bh.H14.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 20 AODV20_2bh.H15.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 AODV20_2bh.H16.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 22 AODV20_2bh.H17.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 AODV20_2bh.H18.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 24 AODV20_2bh.H19.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 AODV20_2bh.H20.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 26 AODV20_2bh.Bs2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 AODV20_2bh.BH1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 28 AODV20_2bh.BH2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 29 AODV20_2bh.Bs1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 30 AODV20_2bh.Bs1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 31 AODV20_2bh.S5.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 32 AODV20_2bh.S5.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 33 AODV20_2bh.S1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 34 AODV20_2bh.S1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 35 AODV20_2bh.S2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 36 AODV20_2bh.S2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 37 AODV20_2bh.S3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 38 AODV20_2bh.S3.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 39 AODV20_2bh.S4.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 40 AODV20_2bh.S4.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 41 AODV20_2bh.H1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 42 AODV20_2bh.H1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 43 AODV20_2bh.H2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 44 AODV20_2bh.H2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 45 AODV20_2bh.H3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 46 AODV20_2bh.H3.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 47 AODV20_2bh.H4.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 48 AODV20_2bh.H4.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 49 AODV20_2bh.H5.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 50 AODV20_2bh.H5.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 51 AODV20_2bh.H6.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 52 AODV20_2bh.H6.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 53 AODV20_2bh.H7.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 54 AODV20_2bh.H7.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 55 AODV20_2bh.H8.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 56 AODV20_2bh.H8.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 57 AODV20_2bh.H9.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 58 AODV20_2bh.H9.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 59 AODV20_2bh.H10.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 60 AODV20_2bh.H10.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 61 AODV20_2bh.H11.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 62 AODV20_2bh.H11.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 63 AODV20_2bh.H12.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 64 AODV20_2bh.H12.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 65 AODV20_2bh.H13.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 66 AODV20_2bh.H13.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 67 AODV20_2bh.H14.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 68 AODV20_2bh.H14.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 69 AODV20_2bh.H15.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 70 AODV20_2bh.H15.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 71 AODV20_2bh.H16.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 72 AODV20_2bh.H16.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 73 AODV20_2bh.H17.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 74 AODV20_2bh.H17.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 75 AODV20_2bh.H18.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 76 AODV20_2bh.H18.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 77 AODV20_2bh.H19.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 78 AODV20_2bh.H19.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 79 AODV20_2bh.H20.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 80 AODV20_2bh.H20.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 81 AODV20_2bh.Bs2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 82 AODV20_2bh.Bs2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 83 AODV20_2bh.BH1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 84 AODV20_2bh.BH1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 85 AODV20_2bh.BH2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 86 AODV20_2bh.BH2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	0	0	0
+0	0	0	0
+0	0	0	4
+1	0	0	0
+1	0	0	0
+1	0	0	4
+2	0	0	0
+2	0	0	0
+2	0	0	4
+3	0	0	0
+3	0	0	0
+3	0	0	4
+4	0	0	0
+4	0	0	0
+4	0	0	4
+5	0	0	0
+5	0	0	0
+5	0	0	4
+6	0	0	0
+6	0	0	0
+6	0	0	4
+7	0	0	0
+7	0	0	0
+7	0	0	4
+8	0	0	0
+8	0	0	0
+8	0	0	4
+9	0	0	0
+9	0	0	0
+9	0	0	4
+10	0	0	0
+10	0	0	0
+10	0	0	4
+11	0	0	0
+11	0	0	0
+11	0	0	4
+12	0	0	0
+12	0	0	0
+12	0	0	4
+13	0	0	0
+13	0	0	0
+13	0	0	4
+14	0	0	0
+14	0	0	0
+14	0	0	4
+15	0	0	0
+15	0	0	0
+15	0	0	4
+16	0	0	0
+16	0	0	0
+16	0	0	4
+17	0	0	0
+17	0	0	0
+17	0	0	4
+18	0	0	0
+18	0	0	0
+18	0	0	4
+19	0	0	0
+19	0	0	0
+19	0	0	4
+20	0	0	0
+20	0	0	0
+20	0	0	4
+21	0	0	0
+21	0	0	0
+21	0	0	4
+22	0	0	0
+22	0	0	0
+22	0	0	4
+23	0	0	0
+23	0	0	0
+23	0	0	4
+24	0	0	0
+24	0	0	0
+24	0	0	4
+25	0	0	0
+25	0	0	0
+25	0	0	4
+26	0	0	0
+26	0	0	0
+26	0	0	4
+27	0	0	0
+27	0	0	0
+27	0	0	4
+28	0	0	0
+28	0	0	0
+28	0	0	4
+29	0	0	1
+30	0	0	1
+31	0	0	1
+32	0	0	1
+33	0	0	1
+34	0	0	1
+35	0	0	1
+36	0	0	1
+37	0	0	1
+38	0	0	1
+39	0	0	1
+40	0	0	1
+41	0	0	1
+42	0	0	1
+43	0	0	1
+44	0	0	1
+45	0	0	1
+46	0	0	1
+47	0	0	1
+48	0	0	1
+49	0	0	1
+50	0	0	1
+51	0	0	1
+52	0	0	1
+53	0	0	1
+54	0	0	1
+55	0	0	1
+56	0	0	1
+57	0	0	1
+58	0	0	1
+59	0	0	1
+60	0	0	1
+61	0	0	1
+62	0	0	1
+63	0	0	1
+64	0	0	1
+65	0	0	1
+66	0	0	1
+67	0	0	1
+68	0	0	1
+69	0	0	1
+70	0	0	1
+71	0	0	1
+72	0	0	1
+73	0	0	1
+74	0	0	1
+75	0	0	1
+76	0	0	1
+77	0	0	1
+78	0	0	1
+79	0	0	1
+80	0	0	1
+81	0	0	1
+82	0	0	1
+83	0	0	1
+84	0	0	1
+85	0	0	1
+86	0	0	1
+

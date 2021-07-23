@@ -1,0 +1,23 @@
+<scenario>
+    <at t="25.5">
+        <shutdown module="host[8]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[16]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[22]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[28]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[32]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[36]"/>
+    </at>
+    <at t="25.5">
+        <shutdown module="host[14]"/>
+    </at>
+</scenario>

@@ -1,0 +1,317 @@
+file 365052 1625996143                                          
+version 2
+run General-0-20210711-16:35:28-15711
+attr configname General
+attr datetime 20210711-16:35:28
+attr experiment General
+attr inifile simpledelay.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ntuattack.simulations.delay.SimpleDelayAttack
+attr processid 15711
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.headerLength 96b
+param **.wlan[*].radio.transmitter.communicationRange 200m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param **.hasStatus true
+param *.visualizer.sceneVisualizer.descriptionFigure "\"title\""
+param *.visualizer.mediumVisualizer.displaySignals true
+param *.visualizer.physicalLinkVisualizer.displayLinks true
+param *.visualizer.dataLinkVisualizer.displayLinks true
+param *.visualizer.networkRouteVisualizer.displayRoutes true
+param *.sender.numApps 1
+param *.sender.app[0].typename "\"UdpBasicApp\""
+param *.sender.app[0].destAddresses "\"receiver\""
+param *.sender.app[0].destPort 1000
+param *.sender.app[0].sendInterval "0.5s + uniform(-0.001s,0.001s)"
+param *.sender.app[0].startTime 0s
+param *.sender.app[0].messageLength 512Byte
+param *.sender.app[0].packetName "\"UDPdata\""
+param *.receiver.numApps 1
+param *.receiver.app[0].typename "\"UdpSink\""
+param *.receiver.app[0].localPort 1000
+
+vector 0 SimpleDelayAttack.sender.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 SimpleDelayAttack.receiver.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 SimpleDelayAttack.Host.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 SimpleDelayAttack.sender.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 4 SimpleDelayAttack.sender.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 5 SimpleDelayAttack.receiver.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 6 SimpleDelayAttack.receiver.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 7 SimpleDelayAttack.Host.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 8 SimpleDelayAttack.Host.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 9 SimpleDelayAttack.sender.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 10 SimpleDelayAttack.sender.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 11 SimpleDelayAttack.sender.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 12 SimpleDelayAttack.sender.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 13 SimpleDelayAttack.sender.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 14 SimpleDelayAttack.sender.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 15 SimpleDelayAttack.sender.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 16 SimpleDelayAttack.sender.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 17 SimpleDelayAttack.Host.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 18 SimpleDelayAttack.Host.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 19 SimpleDelayAttack.Host.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 20 SimpleDelayAttack.Host.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 21 SimpleDelayAttack.Host.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 22 SimpleDelayAttack.Host.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 23 SimpleDelayAttack.Host.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 24 SimpleDelayAttack.Host.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 25 SimpleDelayAttack.Host.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 26 SimpleDelayAttack.Host.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 27 SimpleDelayAttack.Host.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 28 SimpleDelayAttack.sender.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 29 SimpleDelayAttack.sender.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 30 SimpleDelayAttack.sender.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 31 SimpleDelayAttack.sender.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 32 SimpleDelayAttack.receiver.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 33 SimpleDelayAttack.receiver.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 34 SimpleDelayAttack.receiver.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 35 SimpleDelayAttack.receiver.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 36 SimpleDelayAttack.receiver.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 37 SimpleDelayAttack.receiver.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 38 SimpleDelayAttack.receiver.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 39 SimpleDelayAttack.receiver.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 40 SimpleDelayAttack.receiver.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 41 SimpleDelayAttack.receiver.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 42 SimpleDelayAttack.receiver.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 43 SimpleDelayAttack.receiver.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 44 SimpleDelayAttack.Host.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 45 SimpleDelayAttack.sender.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 46 SimpleDelayAttack.Host.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 47 SimpleDelayAttack.sender.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 48 SimpleDelayAttack.receiver.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 49 SimpleDelayAttack.receiver.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 50 SimpleDelayAttack.receiver.app[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "end-to-end delay, vector"
+attr unit s
+vector 51 SimpleDelayAttack.receiver.app[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(packetReceived)
+attr title "received packet sequence number, vector"
+vector 52 SimpleDelayAttack.receiver.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+vector 53 SimpleDelayAttack.sender.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 54 SimpleDelayAttack.receiver.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 55 SimpleDelayAttack.sender.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+0	12193 24 0 0 0 0 3 0 4 4 16
+1	12217 24 0 0 0 0 3 0 4 4 16
+2	12241 24 0 0 0 0 3 0 4 4 16
+3	12265 15322 0 8508 0 149.506967908019 613 1 3 1225 3061
+4	27587 15181 0 8498 0 149.504666783419 607 1 2 910 1516
+5	42768 15312 0 8510 0 149.506967951246 613 1 3 1225 3061
+6	58080 148 0 6879 0 120.500730258276 7 1 2 10 16
+7	58228 15321 0 8499 0 149.504667345719 613 1 3 1225 3061
+8	73549 15324 0 8507 0 149.506967345719 613 1 2 919 1531
+9	88873 8101 7 8491 0 149.502366783419 300 512 512 153600 78643200
+10	96974 8426 10 8492 0 149.502366783419 301 32 520 156032 81121024
+11	105400 8492 17 8494 0.003575946825 149.502366783419 303 28 540 162108 87484272
+12	113892 8492 17 8494 0.003575946825 149.502366783419 303 28 540 162108 87484272
+13	122384 15778 17 8494 0.003575946825 149.502366783419 606 0 1 303 303
+14	138162 8492 17 8494 0.003575946825 149.502366783419 303 28 540 162108 87484272
+15	146654 7889 17 8494 0.003575946825 149.502366783419 303 0 0 0 0
+16	154543 8492 17 8494 0.003575946825 149.502366783419 303 51 563 169077 95101527
+17	163035 8569 23 8500 0.003924509125 149.504667345719 306 51 563 169250 95111770
+18	171604 8569 23 8500 0.003924509125 149.504667345719 306 28 540 162212 87488144
+19	180173 48 25 75 0.003924509125 0.009332259953 2 28 32 60 1808
+20	180221 46 25 75 0.003924509125 0.009332259953 2 1 2 3 5
+21	180267 48 29 79 0.008145837845 0.012346076805 2 28 32 60 1808
+22	180315 8570 31 8502 0.008145837845 149.504667345719 306 28 540 162212 87488144
+23	188885 8570 31 8502 0.008145837845 149.504667345719 306 28 540 162212 87488144
+24	197455 15928 31 8502 0.008145837845 149.504667345719 612 0 1 306 306
+25	213383 8570 31 8502 0.008145837845 149.504667345719 306 28 540 162212 87488144
+26	221953 7964 31 8502 0.008145837845 149.504667345719 306 0 0 0 0
+27	229917 8570 31 8502 0.008145837845 149.504667345719 306 51 563 169250 95111770
+28	238487 8569 37 8509 0.008494400145 149.506967908019 306 51 563 169250 95111770
+29	247056 129 37 6870 0.008494400145 120.500478215049 5 28 52 184 7360
+30	247185 49 39 109 0.008494400145 0.013183763705 2 28 32 60 1808
+31	247234 47 39 109 0.008494400145 0.013183763705 2 1 2 3 5
+32	247281 8565 42 8511 0.008494443372 149.506967951246 306 51 563 169250 95111770
+33	255846 8512 42 8511 0.008494443372 149.506967951246 304 28 540 162136 87485056
+34	264358 8436 44 8513 0.008494443372 149.506967951246 301 32 520 156032 81121024
+35	272794 8329 44 8513 0.008494443372 149.506967951246 301 1 301 45451 9135651
+36	281123 24 46 46 0.008494443372 0.008494443372 1 28 28 28 784
+37	281147 24 47 47 0.008494443372 0.008494443372 1 28 28 28 784
+38	281171 76 48 6875 0.008494443372 120.500478258276 3 28 48 104 3872
+39	281247 76 48 6875 0.008494443372 120.500478258276 3 28 48 104 3872
+40	281323 146 48 6875 0.008494443372 120.500478258276 6 0 1 3 3
+41	281469 76 48 6875 0.008494443372 120.500478258276 3 28 48 104 3872
+42	281545 73 48 6875 0.008494443372 120.500478258276 3 0 0 0 0
+43	281618 76 48 6875 0.008494443372 120.500478258276 3 51 71 173 10243
+44	281694 52 55 6843 0.008747048899 120.497672528149 2 28 28 56 1568
+45	281746 8440 63 8509 0.008999611199 149.506967908019 301 51 563 168951 95093301
+46	290186 52 80 6862 0.012346076805 120.500225652749 2 28 28 56 1568
+47	290238 24 88 88 0.012598639105 0.012598639105 1 28 28 28 784
+48	290262 53 114 6856 0.013183806932 120.497925133676 2 51 71 122 7642
+49	290315 8412 134 8514 0.017784931532 149.506967951246 300 512 512 153600 78643200
+50	298727 11712 134 8514 0.017784931532 149.506967951246 300 0.004601167827 0.017784931532 1.394544447459 0.0066566748818367
+51	310439 8302 134 8514 0.017784931532 149.506967951246 300 0 299 44850 8955050
+52	318741 23652 167 8520 0.1 150 1500 0 40960 12288000 503316480000
+53	342393 28 6835 6835 120.497419965849 120.497419965849 1 28 28 28 784
+54	342421 28 6874 6874 120.500478258276 120.500478258276 1 28 28 28 784
+55	342449 22602 8520 8520 0.1 150 1500 0 0 0 0
+

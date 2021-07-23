@@ -1,0 +1,792 @@
+file 672314 1618321448                                          
+version 2
+run General-0-20210413-20:43:59-8701
+attr configname General
+attr datetime 20210413-20:43:59
+attr experiment General
+attr inifile test.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TEST
+attr processid 8701
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.communicationRange 200m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param *.visualizer.networkRouteVisualizer.lineShift 0
+param *.visualizer.transportRouteVisualizer.displayRoutes true
+param *.visualizer.transportRouteVisualizer.fadeOutMode "\"simulationTime\""
+param *.visualizer.transportRouteVisualizer.fadeOutTime 1.2s
+param *.visualizer.interfaceTableVisualizer.displayInterfaceTables true
+param *.sender*.numApps 1
+param *.sender*.app[0].typename "\"UdpBasicApp\""
+param *.sender*.app[0].destAddresses "\"receiver\""
+param *.sender*.app[0].destPort 1000
+param *.sender*.app[0].sendInterval 1s
+param *.sender*.app[0].startTime 0s
+param *.sender*.app[0].messageLength 1000Byte
+param *.sender*.app[0].packetName "\"UDPdata\""
+param *.receiver.numApps 1
+param *.receiver.app[0].typename "\"UdpSink\""
+param *.receiver.app[0].localPort 1000
+
+vector 0 TEST.N1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 TEST.N2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 TEST.sender0.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 TEST.receiver.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 TEST.ntu_Attacker_Blackhole.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 TEST.ntu_Attacker_Blackhole1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 TEST.N3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 TEST.N4.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 TEST.N5.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 TEST.N1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 10 TEST.N1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 11 TEST.N2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 12 TEST.N2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 13 TEST.sender0.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 14 TEST.sender0.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 15 TEST.receiver.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 16 TEST.receiver.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 17 TEST.ntu_Attacker_Blackhole.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 18 TEST.ntu_Attacker_Blackhole.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 19 TEST.ntu_Attacker_Blackhole1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 20 TEST.ntu_Attacker_Blackhole1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 21 TEST.N3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 22 TEST.N3.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 23 TEST.N4.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 24 TEST.N4.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 25 TEST.N5.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 26 TEST.N5.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 27 TEST.sender0.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 28 TEST.sender0.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 29 TEST.sender0.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 30 TEST.sender0.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 31 TEST.sender0.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 32 TEST.sender0.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 33 TEST.sender0.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 34 TEST.sender0.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 35 TEST.ntu_Attacker_Blackhole1.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 36 TEST.ntu_Attacker_Blackhole1.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 37 TEST.ntu_Attacker_Blackhole1.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 38 TEST.ntu_Attacker_Blackhole1.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 39 TEST.ntu_Attacker_Blackhole1.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 40 TEST.ntu_Attacker_Blackhole1.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 41 TEST.ntu_Attacker_Blackhole1.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 42 TEST.ntu_Attacker_Blackhole1.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 43 TEST.ntu_Attacker_Blackhole1.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 44 TEST.ntu_Attacker_Blackhole1.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 45 TEST.ntu_Attacker_Blackhole1.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 46 TEST.ntu_Attacker_Blackhole1.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 47 TEST.N4.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 48 TEST.N4.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 49 TEST.N4.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 50 TEST.N4.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 51 TEST.N5.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 52 TEST.N5.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 53 TEST.N5.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 54 TEST.N5.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 55 TEST.sender0.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 56 TEST.sender0.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 57 TEST.sender0.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 58 TEST.N4.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 59 TEST.N5.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 60 TEST.sender0.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 61 TEST.sender0.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 62 TEST.N4.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 63 TEST.N4.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 64 TEST.N4.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 65 TEST.N4.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 66 TEST.N4.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 67 TEST.N4.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 68 TEST.N4.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 69 TEST.N1.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 70 TEST.N1.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 71 TEST.N1.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 72 TEST.N1.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 73 TEST.N5.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 74 TEST.N5.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 75 TEST.N5.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 76 TEST.N5.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 77 TEST.N5.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 78 TEST.N5.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 79 TEST.N5.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 80 TEST.N3.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 81 TEST.N3.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 82 TEST.N3.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 83 TEST.N3.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 84 TEST.N5.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 85 TEST.sender0.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 86 TEST.N1.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 87 TEST.N3.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 88 TEST.N3.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 89 TEST.N3.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 90 TEST.N3.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 91 TEST.N3.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 92 TEST.N3.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 93 TEST.N3.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 94 TEST.N3.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 95 TEST.N2.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 96 TEST.N2.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 97 TEST.N2.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 98 TEST.N2.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 99 TEST.N1.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 100 TEST.N1.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 101 TEST.N1.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 102 TEST.N1.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 103 TEST.N1.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 104 TEST.N1.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 105 TEST.N1.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 106 TEST.N2.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 107 TEST.N2.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 108 TEST.N2.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 109 TEST.N2.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 110 TEST.N2.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 111 TEST.N2.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 112 TEST.N2.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 113 TEST.ntu_Attacker_Blackhole.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 114 TEST.ntu_Attacker_Blackhole.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 115 TEST.ntu_Attacker_Blackhole.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 116 TEST.ntu_Attacker_Blackhole.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 117 TEST.ntu_Attacker_Blackhole.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 118 TEST.ntu_Attacker_Blackhole.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 119 TEST.ntu_Attacker_Blackhole.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 120 TEST.ntu_Attacker_Blackhole.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 121 TEST.ntu_Attacker_Blackhole.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 122 TEST.ntu_Attacker_Blackhole.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 123 TEST.ntu_Attacker_Blackhole.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 124 TEST.ntu_Attacker_Blackhole.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 125 TEST.receiver.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 126 TEST.receiver.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 127 TEST.receiver.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 128 TEST.receiver.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 129 TEST.receiver.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 130 TEST.receiver.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 131 TEST.receiver.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 132 TEST.receiver.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 133 TEST.receiver.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 134 TEST.receiver.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 135 TEST.receiver.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 136 TEST.receiver.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 137 TEST.N2.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 138 TEST.receiver.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 139 TEST.ntu_Attacker_Blackhole.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 140 TEST.N2.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 141 TEST.N1.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 142 TEST.N1.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 143 TEST.N4.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 144 TEST.N2.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 145 TEST.N4.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 146 TEST.ntu_Attacker_Blackhole1.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 147 TEST.receiver.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 148 TEST.receiver.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+vector 149 TEST.receiver.app[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "end-to-end delay, vector"
+attr unit s
+vector 150 TEST.receiver.app[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(packetReceived)
+attr title "received packet sequence number, vector"
+vector 151 TEST.sender0.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 152 TEST.receiver.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 153 TEST.sender0.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+0	29406 24 0 0 0 0 3 0 4 4 16
+1	29430 24 0 0 0 0 3 0 4 4 16
+2	29454 24 0 0 0 0 3 0 4 4 16
+3	29478 24 0 0 0 0 3 0 4 4 16
+4	29502 24 0 0 0 0 3 0 4 4 16
+5	29526 24 0 0 0 0 3 0 4 4 16
+6	29550 24 0 0 0 0 3 0 4 4 16
+7	29574 24 0 0 0 0 3 0 4 4 16
+8	29598 24 0 0 0 0 3 0 4 4 16
+9	29622 21985 0 24324 0 199.017009764271 848 1 3 1695 4235
+10	51607 11245 0 24298 0 199.012756914893 417 1 2 625 1041
+11	62852 11707 0 24301 0 199.012757339582 436 1 3 871 2175
+12	74559 11291 0 24323 0 199.017009339582 419 1 2 628 1046
+13	85850 11301 0 24276 0 199.00850478418 436 1 3 871 2175
+14	97151 7382 0 24355 0 200 414 1 2 621 1035
+15	104533 11435 0 24328 0 199.017009788161 425 1 3 849 2121
+16	115968 257 0 15518 0 122.014776467325 11 1 2 16 26
+17	116225 11533 0 24326 0 199.017009773497 429 1 3 857 2141
+18	127758 153 0 842 0 0.808648390518 7 1 2 10 16
+19	127911 11322 0 24253 0 199.004252386546 421 1 3 841 2101
+20	139233 245 0 738 0 0.806446387412 11 1 2 16 26
+21	139478 22688 0 24333 0 199.017009899513 842 1 3 1683 4205
+22	162166 105 0 869 0 0.810921270945 5 1 2 7 11
+23	162271 22158 0 24308 0 199.012757437696 837 1 3 1673 4181
+24	184429 10895 0 24275 0 199.00850439209 419 1 2 628 1046
+25	195324 33488 0 24306 0 199.012757393229 1257 1 3 2513 6279
+26	228812 201 0 705 0 0.806113880427 9 1 2 13 21
+27	229013 3429 23 24351 0 200 201 1000 1000 201000 201000000
+28	232442 3503 26 24352 0 200 204 32 1008 202704 204231936
+29	235945 3610 33 24354 0.002964223082 200 207 28 1028 206868 212424048
+30	239555 3610 33 24354 0.002964223082 200 207 28 1028 206868 212424048
+31	243165 6002 33 24354 0.002964223082 200 414 0 1 207 207
+32	249167 3610 33 24354 0.002964223082 200 207 28 1028 206868 212424048
+33	252777 3013 33 24354 0.002964223082 200 207 0 0.00425239209 0.00425239209 1.8082838487095e-05
+34	255790 3610 33 24354 0.002964223082 200 207 51 1051 211629 222049479
+35	259400 6267 45 24254 0.003312609628 199.004252386546 210 51 1051 210854 220964354
+36	265667 227 45 15272 0.003312609628 122.000252386546 9 28 52 396 18576
+37	265894 149 47 716 0.003312609628 0.806114387412 6 32 32 192 6144
+38	266043 143 47 716 0.003312609628 0.806114387412 6 1 6 21 91
+39	266186 74 49 718 0.003312609628 0.806114387412 3 28 28 84 2352
+40	266260 49 50 289 0.003312609628 0.326435213526 2 28 28 56 1568
+41	266309 123 51 720 0.003312609628 0.806114387412 5 28 48 200 8480
+42	266432 123 51 720 0.003312609628 0.806114387412 5 28 48 200 8480
+43	266555 236 51 720 0.003312609628 0.806114387412 10 0 1 5 5
+44	266791 123 51 720 0.003312609628 0.806114387412 5 28 48 200 8480
+45	266914 118 51 720 0.003312609628 0.806114387412 5 0 0 0 0
+46	267032 123 51 720 0.003312609628 0.806114387412 5 51 71 315 20325
+47	267155 12293 54 24309 0.003312615172 199.012757437696 418 51 1051 421550 441916290
+48	279448 6204 54 24256 0.003312615172 199.00425239209 215 28 1028 206252 211386960
+49	285652 250 56 1217 0.003312615172 1.340078907608 10 28 32 312 9760
+50	285902 241 56 1217 0.003312615172 1.340078907608 10 1 10 55 385
+51	286143 18538 59 24307 0.003312696884 199.012757393229 627 51 1051 630337 660671707
+52	304681 486 59 15423 0.003312696884 122.009767223015 19 28 52 812 37136
+53	305167 299 61 878 0.003312696884 0.810921796454 12 28 32 376 11808
+54	305466 290 61 878 0.003312696884 0.810921796454 12 1 12 78 650
+55	305756 6251 78 24277 0.003564996174 199.00850478418 217 51 1051 211287 220991737
+56	312007 333 78 15343 0.003564996174 122.00500956836 13 28 52 544 24352
+57	312340 50 79 1244 0.003564996174 1.342945363992 2 28 28 56 1568
+58	312390 6089 106 24309 0.003817388264 199.012757437696 203 51 1051 210353 220928003
+59	318479 18052 108 24307 0.003817469976 199.012757393229 608 51 1051 629088 660587168
+60	336531 202 126 1331 0.004149769266 1.343862540262 8 28 32 244 7472
+61	336733 194 126 1331 0.004149769266 1.343862540262 8 1 8 36 204
+62	336927 127 137 1238 0.006888561997 1.342723382216 5 28 32 152 4640
+63	337054 6052 139 24258 0.006888561997 199.00425239209 209 28 1028 205964 211372656
+64	343106 6052 139 24258 0.006888561997 199.00425239209 209 28 1028 205964 211372656
+65	349158 10886 139 24258 0.006888561997 199.00425239209 418 0 1 209 209
+66	360044 6052 139 24258 0.006888561997 199.00425239209 209 28 1028 205964 211372656
+67	366096 5465 139 24258 0.006888561997 199.00425239209 209 0 0.00033239209 0.000332522803 1.1048451858046e-07
+68	371561 6052 139 24258 0.006888561997 199.00425239209 209 51 1051 210771 220957561
+69	377613 12623 161 24325 0.0072370848 199.017009764271 423 51 1051 421869 441937199
+70	390236 6453 161 24281 0.0072370848 199.008504914893 217 28 1028 206332 211390448
+71	396689 274 163 1103 0.0072370848 1.335787759638 11 28 32 344 10784
+72	396963 265 163 1103 0.0072370848 1.335787759638 11 1 11 66 506
+73	397228 75 171 672 0.007534025604 0.805765880427 3 32 32 96 3072
+74	397303 100 173 674 0.007534025604 0.805765880427 4 28 52 184 8896
+75	397403 100 173 674 0.007534025604 0.805765880427 4 28 52 184 8896
+76	397503 192 173 674 0.007534025604 0.805765880427 8 0 1 4 4
+77	397695 100 173 674 0.007534025604 0.805765880427 4 28 52 184 8896
+78	397795 96 173 674 0.007534025604 0.805765880427 4 0 0 0 0
+79	397891 100 173 674 0.007534025604 0.805765880427 4 51 75 276 19476
+80	397991 12545 205 24334 0.007882551113 199.017009899513 420 51 1051 420668 440821348
+81	410536 284 205 15503 0.007882551113 122.014524578677 11 28 52 476 22064
+82	410820 174 207 828 0.007882551113 0.808316516534 7 32 32 224 7168
+83	410994 167 207 828 0.007882551113 0.808316516534 7 1 7 28 140
+84	411161 25 314 314 0.326687720511 0.326687720511 1 28 28 28 784
+85	411186 5918 333 24277 0.326940194313 199.00850478418 204 51 1051 210444 220935484
+86	417104 6170 335 24325 0.326940198847 199.017009764271 206 51 1051 210546 220940686
+87	423274 12261 344 24334 0.32694024602 199.017009899513 409 51 1051 419939 440771569
+88	435535 50 405 857 0.328553506034 0.810573270945 2 32 32 64 2048
+89	435585 50 407 859 0.328553506034 0.810573270945 2 52 52 104 5408
+90	435635 50 407 859 0.328553506034 0.810573270945 2 52 52 104 5408
+91	435685 96 407 859 0.328553506034 0.810573270945 4 0 1 2 2
+92	435781 50 407 859 0.328553506034 0.810573270945 2 52 52 104 5408
+93	435831 48 407 859 0.328553506034 0.810573270945 2 0 0 0 0
+94	435879 50 407 859 0.328553506034 0.810573270945 2 75 75 150 11250
+95	435929 6454 429 24302 0.328902065965 199.012757339582 217 51 1051 211283 220991153
+96	442383 6373 429 24302 0.328902065965 199.012757339582 214 28 1028 206168 211381536
+97	448756 200 431 996 0.328902065965 1.333538127342 8 28 32 240 7232
+98	448956 192 431 996 0.328902065965 1.333538127342 8 1 8 36 204
+99	449148 102 439 1195 0.330671443563 1.339746384805 4 28 32 120 3616
+100	449250 6434 441 24283 0.330671443563 199.008504914893 208 28 1028 205912 211369952
+101	455684 6434 441 24283 0.330671443563 199.008504914893 208 28 1028 205912 211369952
+102	462118 11652 441 24283 0.330671443563 199.008504914893 416 0 1 208 208
+103	473770 6434 441 24283 0.330671443563 199.008504914893 208 28 1028 205912 211369952
+104	480204 5826 441 24283 0.330671443563 199.008504914893 208 0 0 0 0
+105	486030 6434 441 24283 0.330671443563 199.008504914893 208 51 1051 210696 220951936
+106	492464 106 477 1087 0.332019884447 1.335455334949 4 28 32 120 3616
+107	492570 6459 479 24304 0.332019884447 199.012757339582 209 28 1028 205940 211370736
+108	499029 6459 479 24304 0.332019884447 199.012757339582 209 28 1028 205940 211370736
+109	505488 11700 479 24304 0.332019884447 199.012757339582 418 0 1 209 209
+110	517188 6459 479 24304 0.332019884447 199.012757339582 209 28 1028 205940 211370736
+111	523647 5850 479 24304 0.332019884447 199.012757339582 209 0 0 0 0
+112	529497 6459 479 24304 0.332019884447 199.012757339582 209 51 1051 210747 220954537
+113	535956 6590 496 24327 0.332368318362 199.017009773497 214 51 1051 211042 220972422
+114	542546 185 496 15495 0.332368318362 122.014524452661 7 28 52 244 9328
+115	542731 52 498 812 0.332368318362 0.808316390518 2 32 32 64 2048
+116	542783 50 498 812 0.332368318362 0.808316390518 2 1 2 3 5
+117	542833 52 500 814 0.332368318362 0.808316390518 2 28 28 56 1568
+118	542885 26 501 501 0.332368318362 0.332368318362 1 28 28 28 784
+119	542911 78 502 816 0.332368318362 0.808316390518 3 28 48 124 5392
+120	542989 78 502 816 0.332368318362 0.808316390518 3 28 48 124 5392
+121	543067 150 502 816 0.332368318362 0.808316390518 6 0 1 3 3
+122	543217 78 502 816 0.332368318362 0.808316390518 3 28 48 124 5392
+123	543295 75 502 816 0.332368318362 0.808316390518 3 0 0 0 0
+124	543370 78 502 816 0.332368318362 0.808316390518 3 51 71 193 12683
+125	543448 6537 505 24329 0.332368333026 199.017009788161 212 51 1051 210940 220967220
+126	549985 6375 505 24329 0.332368333026 199.017009788161 206 28 1028 205816 211365344
+127	556360 6266 507 24331 0.332368333026 199.017009788161 202 32 1008 201664 203214848
+128	562626 5960 507 24331 0.332368333026 199.017009788161 202 1 202 20503 2767905
+129	568586 52 509 823 0.332368333026 0.808316405182 2 28 28 56 1568
+130	568638 52 510 910 0.332368333026 1.332368333026 2 28 28 56 1568
+131	568690 134 511 15500 0.332368333026 122.014524467325 5 28 48 180 6960
+132	568824 134 511 15500 0.332368333026 122.014524467325 5 28 48 180 6960
+133	568958 258 511 15500 0.332368333026 122.014524467325 10 0 1 5 5
+134	569216 134 511 15500 0.332368333026 122.014524467325 5 28 48 180 6960
+135	569350 142 511 15500 0.332368333026 122.014524467325 5 0 0.000332448579 0.000332448579 1.1052205767912e-07
+136	569492 134 511 15500 0.332368333026 122.014524467325 5 51 71 295 17885
+137	569626 82 542 15419 0.332620752277 122.009767169368 3 28 28 84 2352
+138	569708 162 581 15449 0.332873200856 122.010019617947 6 51 71 386 25366
+139	569870 6405 948 24327 1.33287321552 199.017009773497 207 51 1051 210637 220948167
+140	576275 57 1008 15471 1.334568960236 122.014272018746 2 28 28 56 1568
+141	576332 57 1022 15350 1.334821384925 122.005009699073 2 28 28 56 1568
+142	576389 57 1117 15397 1.337794559861 122.009514744679 2 28 28 56 1568
+143	576446 56 1140 15276 1.338047082664 122.00025239209 2 28 28 56 1568
+144	576502 84 1182 15370 1.338632030156 122.005262123762 3 51 71 193 12683
+145	576586 56 1226 15323 1.342692971902 122.00475717627 2 28 28 56 1568
+146	576642 6241 1268 24254 1.343197750538 199.004252386546 201 51 1051 210251 220922801
+147	582883 6214 1487 24332 1.360539936333 199.017009788161 200 1000 1000 200000 200000000
+148	589097 34549 1487 24356 0.1 200 2000 0 160000 16000000 1292800000000
+149	623646 8214 1487 24332 1.360539936333 199.017009788161 200 0.017009788161 1.360539936333 5.095290027669 2.0415031532887
+150	631860 5904 1487 24332 1.360539936333 199.017009788161 200 0 199 19900 2646700
+151	637764 17 15259 15259 122 122 1 28 28 28 784
+152	637781 30 15499 15499 122.014524467325 122.014524467325 1 28 28 28 784
+153	637811 34502 24356 24356 0.1 200 2000 0 0 0 0
+

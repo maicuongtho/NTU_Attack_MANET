@@ -1,0 +1,3 @@
+package ntuattack;
+
+@license(LGPL);

@@ -1,0 +1,201 @@
+version 2
+run General-0-20210704-14:36:08-13506
+attr configname General
+attr datetime 20210704-14:36:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleGrayhole
+attr processid 13506
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.headerLength 96b
+param *.host*.wlan[*].radio.transmitter.communicationRange 180m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param **.hasStatus true
+param *.visualizer.sceneVisualizer.descriptionFigure "\"title\""
+param *.visualizer.physicalLinkVisualizer.displayLinks true
+param *.visualizer.networkRouteVisualizer.displayRoutes true
+param *.sender.wlan[0].radio.transmitter.communicationRange 180m
+param *.receiver.wlan[0].radio.transmitter.communicationRange 180m
+param *.TelnetClient.wlan[0].radio.transmitter.communicationRange 180m
+param *.TelnetServer.wlan[0].radio.transmitter.communicationRange 180m
+param *.sender.numApps 1
+param *.sender.app[0].typename "\"UdpBasicApp\""
+param *.sender.app[0].destAddresses "\"receiver\""
+param *.sender.app[0].destPort 1000
+param *.sender.app[0].sendInterval "0.5s + uniform(-0.001s,0.001s)"
+param *.sender.app[0].startTime 0s
+param *.sender.app[0].messageLength 512Byte
+param *.sender.app[0].packetName "\"UDPdata\""
+param *.receiver.numApps 1
+param *.receiver.app[0].typename "\"UdpSink\""
+param *.receiver.app[0].localPort 1000
+param *.TelnetClient.numApps 1
+param *.TelnetClient.app[0].typename "\"TelnetApp\""
+param *.TelnetClient.app[0].localAddress "\"\""
+param *.TelnetClient.app[0].localPort -1
+param *.TelnetClient.app[0].connectAddress "\"TelnetServer\""
+param *.TelnetClient.app[0].connectPort 1001
+param *.TelnetClient.app[0].startTime 0s
+param *.TelnetServer.numApps 1
+param *.TelnetServer.app[0].typename "\"TcpGenericServerApp\""
+param *.TelnetServer.app[0].localPort 1001
+param *.TelnetServer.app[0].replyDelay 0s
+param *.TelnetClient.app[0].numCommands int(exponential(10))
+param *.TelnetClient.app[0].commandLength intWithUnit(exponential(10B))
+param *.TelnetClient.app[0].keyPressDelay exponential(0.1s)
+param *.TelnetClient.app[0].commandOutputLength intWithUnit(exponential(5B))
+param *.TelnetClient.app[0].thinkTime truncnormal(1s,2s)
+param *.TelnetClient.app[0].idleInterval truncnormal(36s,12s)
+param *.TelnetClient.app[0].reconnectInterval 3s
+param *.GrayHoler.wlan[0].radio.transmitter.communicationRange 180m
+
+vector 0 SimpleGrayhole.sender.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 SimpleGrayhole.receiver.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 SimpleGrayhole.host1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 SimpleGrayhole.GrayHoler.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 SimpleGrayhole.host2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 SimpleGrayhole.TelnetClient.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 SimpleGrayhole.TelnetServer.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 SimpleGrayhole.host3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 SimpleGrayhole.sender.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 9 SimpleGrayhole.sender.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 10 SimpleGrayhole.receiver.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 11 SimpleGrayhole.receiver.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 12 SimpleGrayhole.host1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 13 SimpleGrayhole.host1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 14 SimpleGrayhole.GrayHoler.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 15 SimpleGrayhole.GrayHoler.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 16 SimpleGrayhole.host2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 17 SimpleGrayhole.host2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 18 SimpleGrayhole.TelnetClient.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 19 SimpleGrayhole.TelnetClient.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 20 SimpleGrayhole.TelnetServer.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 21 SimpleGrayhole.TelnetServer.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 22 SimpleGrayhole.host3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 23 SimpleGrayhole.host3.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	0	0	0
+0	0	0	0
+0	0	0	4
+1	0	0	0
+1	0	0	0
+1	0	0	4
+2	0	0	0
+2	0	0	0
+2	0	0	4
+3	0	0	0
+3	0	0	0
+3	0	0	4
+4	0	0	0
+4	0	0	0
+4	0	0	4
+5	0	0	0
+5	0	0	0
+5	0	0	4
+6	0	0	0
+6	0	0	0
+6	0	0	4
+7	0	0	0
+7	0	0	0
+7	0	0	4
+8	0	0	1
+9	0	0	1
+10	0	0	1
+11	0	0	1
+12	0	0	1
+13	0	0	1
+14	0	0	1
+15	0	0	1
+16	0	0	1
+17	0	0	1
+18	0	0	1
+19	0	0	1
+20	0	0	1
+21	0	0	1
+22	0	0	1
+23	0	0	1
+

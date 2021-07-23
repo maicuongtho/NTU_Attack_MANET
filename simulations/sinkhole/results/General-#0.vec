@@ -1,0 +1,2146 @@
+version 2
+run General-0-20210702-10:10:59-4130
+attr configname General
+attr datetime 20210702-10:10:59
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network SimpleSinkhole
+attr processid 4130
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.headerLength 96b
+param **.wlan[*].radio.transmitter.communicationRange 200m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param **.hasStatus true
+param *.visualizer.sceneVisualizer.descriptionFigure "\"title\""
+param *.visualizer.mediumVisualizer.displaySignals true
+param *.visualizer.physicalLinkVisualizer.displayLinks true
+param *.visualizer.physicalLinkVisualizer.packetFilter "\"UDP*\""
+param **.wlan[*].radio.transmitter.communicationRange 180m
+param *.sender.wlan[0].radio.displayCommunicationRange true
+param *.receiver.wlan[0].radio.displayCommunicationRange true
+param *.sender.numApps 1
+param *.sender.app[0].typename "\"UdpBasicApp\""
+param *.sender.app[0].destAddresses "\"receiver\""
+param *.sender.app[0].destPort 1000
+param *.sender.app[0].sendInterval 1s
+param *.sender.app[0].startTime 0s
+param *.sender.app[0].messageLength 512Byte
+param *.sender.app[0].packetName "\"UDPdata\""
+param *.receiver.numApps 1
+param *.receiver.app[0].typename "\"UdpSink\""
+param *.receiver.app[0].localPort 1000
+param **.aodv.activeRouteTimeout 3s
+
+vector 0 SimpleSinkhole.sender.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 SimpleSinkhole.receiver.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 2 SimpleSinkhole.host1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 SimpleSinkhole.host2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 4 SimpleSinkhole.host3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 SimpleSinkhole.host4.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 6 SimpleSinkhole.attacker.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 SimpleSinkhole.attacker1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 8 SimpleSinkhole.host5.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 SimpleSinkhole.sender.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 10 SimpleSinkhole.sender.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 11 SimpleSinkhole.receiver.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 12 SimpleSinkhole.receiver.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 13 SimpleSinkhole.host1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 14 SimpleSinkhole.host1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 15 SimpleSinkhole.host2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 16 SimpleSinkhole.host2.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 17 SimpleSinkhole.host3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 18 SimpleSinkhole.host3.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 19 SimpleSinkhole.host4.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 20 SimpleSinkhole.host4.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 21 SimpleSinkhole.attacker.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 22 SimpleSinkhole.attacker.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 23 SimpleSinkhole.attacker1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 24 SimpleSinkhole.attacker1.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 25 SimpleSinkhole.host5.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 26 SimpleSinkhole.host5.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 27 SimpleSinkhole.sender.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 28 SimpleSinkhole.sender.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 29 SimpleSinkhole.sender.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 30 SimpleSinkhole.sender.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 31 SimpleSinkhole.sender.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 32 SimpleSinkhole.sender.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 33 SimpleSinkhole.sender.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 34 SimpleSinkhole.sender.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 35 SimpleSinkhole.attacker.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 36 SimpleSinkhole.attacker.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 37 SimpleSinkhole.attacker.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 38 SimpleSinkhole.attacker.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 39 SimpleSinkhole.host1.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 40 SimpleSinkhole.host1.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 41 SimpleSinkhole.host1.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 42 SimpleSinkhole.host1.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 43 SimpleSinkhole.host2.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 44 SimpleSinkhole.host2.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 45 SimpleSinkhole.host2.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 46 SimpleSinkhole.host2.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 47 SimpleSinkhole.host2.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 48 SimpleSinkhole.host2.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 49 SimpleSinkhole.host2.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 50 SimpleSinkhole.host2.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 51 SimpleSinkhole.host2.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 52 SimpleSinkhole.host2.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 53 SimpleSinkhole.host2.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 54 SimpleSinkhole.host3.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 55 SimpleSinkhole.host3.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 56 SimpleSinkhole.host3.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 57 SimpleSinkhole.host3.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 58 SimpleSinkhole.sender.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 59 SimpleSinkhole.sender.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 60 SimpleSinkhole.sender.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 61 SimpleSinkhole.sender.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 62 SimpleSinkhole.attacker1.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 63 SimpleSinkhole.attacker1.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 64 SimpleSinkhole.attacker1.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 65 SimpleSinkhole.attacker1.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 66 SimpleSinkhole.attacker.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 67 SimpleSinkhole.attacker.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 68 SimpleSinkhole.attacker.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 69 SimpleSinkhole.attacker.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 70 SimpleSinkhole.attacker.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 71 SimpleSinkhole.attacker.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 72 SimpleSinkhole.attacker.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 73 SimpleSinkhole.host4.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 74 SimpleSinkhole.host4.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 75 SimpleSinkhole.host4.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 76 SimpleSinkhole.host4.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 77 SimpleSinkhole.host1.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 78 SimpleSinkhole.host1.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 79 SimpleSinkhole.host1.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 80 SimpleSinkhole.host1.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 81 SimpleSinkhole.host1.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 82 SimpleSinkhole.host1.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 83 SimpleSinkhole.host1.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 84 SimpleSinkhole.host4.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 85 SimpleSinkhole.host4.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 86 SimpleSinkhole.host4.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 87 SimpleSinkhole.host4.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 88 SimpleSinkhole.host4.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 89 SimpleSinkhole.host4.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 90 SimpleSinkhole.host4.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 91 SimpleSinkhole.receiver.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 92 SimpleSinkhole.receiver.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 93 SimpleSinkhole.receiver.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 94 SimpleSinkhole.receiver.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 95 SimpleSinkhole.receiver.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 96 SimpleSinkhole.receiver.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 97 SimpleSinkhole.receiver.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 98 SimpleSinkhole.receiver.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 99 SimpleSinkhole.receiver.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 100 SimpleSinkhole.receiver.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 101 SimpleSinkhole.receiver.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 102 SimpleSinkhole.receiver.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 103 SimpleSinkhole.host3.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 104 SimpleSinkhole.host3.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 105 SimpleSinkhole.host3.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 106 SimpleSinkhole.host3.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 107 SimpleSinkhole.host3.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 108 SimpleSinkhole.host3.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 109 SimpleSinkhole.host3.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 110 SimpleSinkhole.host4.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 111 SimpleSinkhole.attacker1.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 112 SimpleSinkhole.attacker1.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 113 SimpleSinkhole.attacker1.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 114 SimpleSinkhole.attacker1.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 115 SimpleSinkhole.attacker1.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 116 SimpleSinkhole.attacker1.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 117 SimpleSinkhole.attacker1.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 118 SimpleSinkhole.host1.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 119 SimpleSinkhole.host5.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 120 SimpleSinkhole.host5.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 121 SimpleSinkhole.host5.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 122 SimpleSinkhole.host5.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+vector 123 SimpleSinkhole.host4.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 124 SimpleSinkhole.attacker.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 125 SimpleSinkhole.host5.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 126 SimpleSinkhole.host5.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 127 SimpleSinkhole.host5.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+vector 128 SimpleSinkhole.host5.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+vector 129 SimpleSinkhole.host5.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+vector 130 SimpleSinkhole.host5.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+vector 131 SimpleSinkhole.host5.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 132 SimpleSinkhole.host2.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 133 SimpleSinkhole.sender.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 134 SimpleSinkhole.host3.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 135 SimpleSinkhole.receiver.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 136 SimpleSinkhole.attacker.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+vector 137 SimpleSinkhole.sender.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+vector 138 SimpleSinkhole.host4.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+vector 139 SimpleSinkhole.attacker.ipv4.ip rcvdPkt:vector ETV
+attr interpolationmode none
+attr title "Number of packet received, vector"
+vector 140 SimpleSinkhole.attacker.ipv4.ip droppings:vector ETV
+attr interpolationmode none
+attr title "Number of drops, vector"
+vector 141 SimpleSinkhole.sender.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+vector 142 SimpleSinkhole.receiver.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+0	0	0	0
+0	0	0	0
+0	0	0	4
+1	0	0	0
+1	0	0	0
+1	0	0	4
+2	0	0	0
+2	0	0	0
+2	0	0	4
+3	0	0	0
+3	0	0	0
+3	0	0	4
+4	0	0	0
+4	0	0	0
+4	0	0	4
+5	0	0	0
+5	0	0	0
+5	0	0	4
+6	0	0	0
+6	0	0	0
+6	0	0	4
+7	0	0	0
+7	0	0	0
+7	0	0	4
+8	0	0	0
+8	0	0	0
+8	0	0	4
+9	0	0	1
+9	69	0.006326910812	3
+9	86	0.006674910812	1
+9	111	0.006888980433	3
+9	128	0.007236980433	1
+9	153	0.007534374104	3
+9	170	0.007882374104	1
+9	230	0.326756872961	3
+9	247	0.327104872961	1
+9	272	0.327362954512	3
+9	289	0.327710954512	1
+9	314	0.328874809087	3
+9	331	0.329222809087	1
+9	542	0.332559184207	3
+9	567	0.332811184207	1
+9	624	0.337603080248	3
+9	638	0.337855080248	1
+9	673	0.338107890774	3
+9	688	0.338439890774	1
+10	0	0	1
+10	32	0.002964223082	2
+10	41	0.003312223082	1
+10	193	0.324289728099	2
+10	202	0.324637728099	1
+10	642	0.337855080248	2
+10	660	0.338107080248	1
+10	694	0.338439890774	2
+10	715	0.340739890774	1
+10	750	1	2
+10	759	1.0023	1
+10	786	2	2
+10	795	2.0023	1
+10	822	3	2
+10	831	3.0023	1
+10	881	4	2
+10	890	4.0023	1
+10	917	5	2
+10	926	5.0023	1
+10	962	6	2
+10	971	6.0023	1
+10	1000	7	2
+10	1009	7.0023	1
+10	1037	8	2
+10	1046	8.0023	1
+10	1073	9	2
+10	1082	9.0023	1
+10	1110	10	2
+10	1119	10.0023	1
+10	1146	11	2
+10	1155	11.0023	1
+10	1183	12	2
+10	1192	12.0023	1
+10	1219	13	2
+10	1228	13.0023	1
+10	1256	14	2
+10	1265	14.0023	1
+10	1292	15	2
+10	1301	15.0023	1
+10	1329	16	2
+10	1338	16.0023	1
+10	1365	17	2
+10	1374	17.0023	1
+10	1402	18	2
+10	1411	18.0023	1
+10	1460	19	2
+10	1469	19.0023	1
+10	1496	20	2
+11	0	0	1
+11	351	0.32963337758	3
+11	364	0.32998137758	1
+11	413	0.330234186128	3
+11	441	0.330486186128	1
+11	517	0.332306667702	3
+11	528	0.332558667702	1
+11	580	0.332811698734	3
+11	603	0.333143698734	1
+12	0	0	1
+12	372	0.32998137758	2
+12	404	0.33023337758	1
+12	445	0.330486186128	2
+12	498	0.330818186128	1
+13	0	0	1
+13	34	0.002964634233	3
+13	47	0.003312634233	1
+13	71	0.006327047102	3
+13	96	0.006675047102	1
+13	109	0.006888843228	3
+13	118	0.007236843228	1
+13	195	0.32429013925	3
+13	208	0.32463813925	1
+13	232	0.326757009251	3
+13	257	0.327105009251	1
+13	270	0.327362817307	3
+13	279	0.327710817307	1
+13	350	0.329633373819	3
+13	359	0.329981373819	1
+13	412	0.330234182367	3
+13	439	0.330486182367	1
+13	516	0.332306663941	3
+13	525	0.332558663941	1
+13	536	0.332559047002	3
+13	563	0.332811047002	1
+13	579	0.332811694973	3
+13	601	0.333143694973	1
+13	622	0.337602943043	3
+13	632	0.337854943043	1
+13	652	0.337855491399	3
+13	666	0.338107491399	1
+13	670	0.338107753569	3
+13	684	0.338439753569	1
+13	702	0.338440301925	3
+13	719	0.340740301925	1
+13	752	1.000000411151	3
+13	763	1.002300411151	1
+13	788	2.000000411151	3
+13	799	2.002300411151	1
+13	824	3.000000411151	3
+13	835	3.002300411151	1
+13	883	4.000000411151	3
+13	894	4.002300411151	1
+13	919	5.000000411151	3
+13	930	5.002300411151	1
+13	964	6.000000411151	3
+13	975	6.002300411151	1
+13	1002	7.000000411151	3
+13	1013	7.002300411151	1
+13	1039	8.000000411151	3
+13	1050	8.002300411151	1
+13	1075	9.000000411151	3
+13	1086	9.002300411151	1
+13	1112	10.000000411151	3
+13	1123	10.002300411151	1
+13	1148	11.000000411151	3
+13	1159	11.002300411151	1
+13	1185	12.000000411151	3
+13	1196	12.002300411151	1
+13	1221	13.000000411151	3
+13	1232	13.002300411151	1
+13	1258	14.000000411151	3
+13	1269	14.002300411151	1
+13	1294	15.000000411151	3
+13	1305	15.002300411151	1
+13	1331	16.000000411151	3
+13	1342	16.002300411151	1
+13	1367	17.000000411151	3
+13	1378	17.002300411151	1
+13	1404	18.000000411151	3
+13	1415	18.002300411151	1
+13	1462	19.000000411151	3
+13	1473	19.002300411151	1
+14	0	0	1
+14	150	0.007533962953	2
+14	159	0.007881962953	1
+14	311	0.328874397936	2
+14	320	0.329222397936	1
+15	0	0	1
+15	35	0.002964658521	3
+15	52	0.003312658521	1
+15	110	0.006888908734	3
+15	123	0.007236908734	1
+15	154	0.007534534682	3
+15	175	0.007882534682	1
+15	196	0.324290163538	3
+15	213	0.324638163538	1
+15	271	0.327362882813	3
+15	284	0.327710882813	1
+15	315	0.328874969665	3
+15	336	0.329222969665	1
+15	397	0.330223081304	3
+15	466	0.330571081304	2
+15	491	0.330682955509	1
+15	539	0.332559112508	3
+15	565	0.332811112508	1
+15	623	0.337603008549	3
+15	635	0.337855008549	1
+15	654	0.337855515687	3
+15	668	0.338107515687	1
+15	671	0.338107819075	3
+15	686	0.338439819075	1
+15	704	0.338440326213	3
+15	721	0.340740326213	1
+15	753	1.000000435439	3
+15	765	1.002300435439	1
+15	789	2.000000435439	3
+15	801	2.002300435439	1
+15	825	3.000000435439	3
+15	837	3.002300435439	1
+15	884	4.000000435439	3
+15	896	4.002300435439	1
+15	920	5.000000435439	3
+15	932	5.002300435439	1
+15	965	6.000000435439	3
+15	977	6.002300435439	1
+15	1003	7.000000435439	3
+15	1015	7.002300435439	1
+15	1040	8.000000435439	3
+15	1052	8.002300435439	1
+15	1076	9.000000435439	3
+15	1088	9.002300435439	1
+15	1113	10.000000435439	3
+15	1125	10.002300435439	1
+15	1149	11.000000435439	3
+15	1161	11.002300435439	1
+15	1186	12.000000435439	3
+15	1198	12.002300435439	1
+15	1222	13.000000435439	3
+15	1234	13.002300435439	1
+15	1259	14.000000435439	3
+15	1271	14.002300435439	1
+15	1295	15.000000435439	3
+15	1307	15.002300435439	1
+15	1332	16.000000435439	3
+15	1344	16.002300435439	1
+15	1368	17.000000435439	3
+15	1380	17.002300435439	1
+15	1405	18.000000435439	3
+15	1417	18.002300435439	1
+15	1463	19.000000435439	3
+15	1475	19.002300435439	1
+16	0	0	1
+16	66	0.006326475373	2
+16	75	0.006674475373	1
+16	227	0.326756437522	2
+16	236	0.327104437522	1
+17	0	0	1
+17	68	0.006326888023	3
+17	81	0.006674888023	1
+17	113	0.006889116572	3
+17	138	0.007237116572	1
+17	229	0.326756850172	3
+17	242	0.327104850172	1
+17	274	0.327363090651	3
+17	299	0.327711090651	1
+17	430	0.330334726134	3
+17	486	0.330682726134	1
+17	544	0.332559320346	3
+17	574	0.332811320346	2
+17	588	0.333107449326	1
+17	626	0.337603216387	3
+17	646	0.337855216387	1
+17	676	0.338108026913	3
+17	697	0.338440026913	1
+18	0	0	1
+18	395	0.330222668654	2
+18	460	0.330570668654	1
+19	0	0	1
+19	112	0.006889090686	3
+19	133	0.007237090686	1
+19	152	0.007534363466	3
+19	165	0.007882363466	1
+19	273	0.327363064765	3
+19	294	0.327711064765	1
+19	313	0.328874798449	3
+19	326	0.329222798449	1
+19	379	0.329981781854	3
+19	405	0.330233781854	1
+19	448	0.330486590402	3
+19	499	0.330818590402	1
+19	543	0.33255929446	3
+19	569	0.33281129446	1
+19	625	0.337603190501	3
+19	643	0.337855190501	1
+19	675	0.338108001027	3
+19	695	0.338440001027	1
+20	0	0	1
+20	349	0.329632973306	2
+20	358	0.329980973306	1
+20	409	0.330233781854	2
+20	438	0.330485781854	1
+20	515	0.332306263428	2
+20	524	0.332558263428	1
+20	573	0.33281129446	2
+20	600	0.33314329446	1
+21	0	0	1
+21	33	0.002964628345	3
+21	42	0.003312628345	1
+21	67	0.006326808937	3
+21	76	0.006674808937	1
+21	151	0.007534231011	3
+21	160	0.007882231011	1
+21	194	0.324290133362	3
+21	203	0.324638133362	1
+21	228	0.326756771086	3
+21	237	0.327104771086	1
+21	312	0.328874665994	3
+21	321	0.329222665994	1
+21	352	0.329633488822	3
+21	373	0.329981488822	1
+21	399	0.330223210056	3
+21	476	0.330571210056	1
+21	518	0.332306778944	3
+21	531	0.332558778944	1
+21	581	0.332811809976	3
+21	605	0.333143809976	1
+21	651	0.337855485511	3
+21	661	0.338107485511	1
+21	701	0.338440296037	3
+21	716	0.340740296037	1
+21	751	1.000000405263	3
+21	760	1.002300405263	1
+21	787	2.000000405263	3
+21	796	2.002300405263	1
+21	823	3.000000405263	3
+21	832	3.002300405263	1
+21	882	4.000000405263	3
+21	891	4.002300405263	1
+21	918	5.000000405263	3
+21	927	5.002300405263	1
+21	963	6.000000405263	3
+21	972	6.002300405263	1
+21	1001	7.000000405263	3
+21	1010	7.002300405263	1
+21	1038	8.000000405263	3
+21	1047	8.002300405263	1
+21	1074	9.000000405263	3
+21	1083	9.002300405263	1
+21	1111	10.000000405263	3
+21	1120	10.002300405263	1
+21	1147	11.000000405263	3
+21	1156	11.002300405263	1
+21	1184	12.000000405263	3
+21	1193	12.002300405263	1
+21	1220	13.000000405263	3
+21	1229	13.002300405263	1
+21	1257	14.000000405263	3
+21	1266	14.002300405263	1
+21	1293	15.000000405263	3
+21	1302	15.002300405263	1
+21	1330	16.000000405263	3
+21	1339	16.002300405263	1
+21	1366	17.000000405263	3
+21	1375	17.002300405263	1
+21	1403	18.000000405263	3
+21	1412	18.002300405263	1
+21	1461	19.000000405263	3
+21	1470	19.002300405263	1
+22	0	0	1
+22	108	0.00688857517	2
+22	117	0.00723657517	1
+22	269	0.327362549249	2
+22	278	0.327710549249	1
+22	535	0.332558778944	2
+22	562	0.332810778944	1
+22	621	0.337602674985	2
+22	631	0.337854674985	1
+22	665	0.338107485511	2
+22	683	0.338439485511	1
+23	0	0	1
+23	70	0.006326999079	3
+23	91	0.006674999079	1
+23	231	0.326756961228	3
+23	252	0.327104961228	1
+23	396	0.330222962985	3
+23	461	0.330570962985	1
+23	555	0.332759672864	3
+23	589	0.333107672864	1
+24	0	0	1
+24	429	0.330334431803	2
+24	485	0.330682431803	1
+25	0	0	1
+25	398	0.330223090965	3
+25	471	0.330571090965	2
+25	492	0.330683077652	1
+26	0	0	1
+26	553	0.332759027015	2
+26	587	0.333107027015	1
+27	21	0	512
+27	746	1	512
+27	782	2	512
+27	818	3	512
+27	877	4	512
+27	913	5	512
+27	958	6	512
+27	996	7	512
+27	1033	8	512
+27	1069	9	512
+27	1106	10	512
+27	1142	11	512
+27	1179	12	512
+27	1215	13	512
+27	1252	14	512
+27	1288	15	512
+27	1325	16	512
+27	1361	17	512
+27	1398	18	512
+27	1456	19	512
+27	1492	20	512
+28	24	0	520
+28	29	0.002964223082	32
+28	190	0.324289728099	32
+28	747	1	520
+28	783	2	520
+28	819	3	520
+28	878	4	520
+28	914	5	520
+28	959	6	520
+28	997	7	520
+28	1034	8	520
+28	1070	9	520
+28	1107	10	520
+28	1143	11	520
+28	1180	12	520
+28	1216	13	520
+28	1253	14	520
+28	1289	15	520
+28	1326	16	520
+28	1362	17	520
+28	1399	18	520
+28	1457	19	520
+28	1493	20	520
+29	31	0.002964223082	52
+29	192	0.324289728099	52
+29	641	0.337855080248	28
+29	693	0.338439890774	540
+29	749	1	540
+29	785	2	540
+29	821	3	540
+29	880	4	540
+29	916	5	540
+29	961	6	540
+29	999	7	540
+29	1036	8	540
+29	1072	9	540
+29	1109	10	540
+29	1145	11	540
+29	1182	12	540
+29	1218	13	540
+29	1255	14	540
+29	1291	15	540
+29	1328	16	540
+29	1364	17	540
+29	1401	18	540
+29	1459	19	540
+29	1495	20	540
+30	31	0.002964223082	52
+30	192	0.324289728099	52
+30	641	0.337855080248	28
+30	693	0.338439890774	540
+30	749	1	540
+30	785	2	540
+30	821	3	540
+30	880	4	540
+30	916	5	540
+30	961	6	540
+30	999	7	540
+30	1036	8	540
+30	1072	9	540
+30	1109	10	540
+30	1145	11	540
+30	1182	12	540
+30	1218	13	540
+30	1255	14	540
+30	1291	15	540
+30	1328	16	540
+30	1364	17	540
+30	1401	18	540
+30	1459	19	540
+30	1495	20	540
+31	31	0.002964223082	1
+31	31	0.002964223082	0
+31	192	0.324289728099	1
+31	192	0.324289728099	0
+31	641	0.337855080248	1
+31	641	0.337855080248	0
+31	693	0.338439890774	1
+31	693	0.338439890774	0
+31	749	1	1
+31	749	1	0
+31	785	2	1
+31	785	2	0
+31	821	3	1
+31	821	3	0
+31	880	4	1
+31	880	4	0
+31	916	5	1
+31	916	5	0
+31	961	6	1
+31	961	6	0
+31	999	7	1
+31	999	7	0
+31	1036	8	1
+31	1036	8	0
+31	1072	9	1
+31	1072	9	0
+31	1109	10	1
+31	1109	10	0
+31	1145	11	1
+31	1145	11	0
+31	1182	12	1
+31	1182	12	0
+31	1218	13	1
+31	1218	13	0
+31	1255	14	1
+31	1255	14	0
+31	1291	15	1
+31	1291	15	0
+31	1328	16	1
+31	1328	16	0
+31	1364	17	1
+31	1364	17	0
+31	1401	18	1
+31	1401	18	0
+31	1459	19	1
+31	1459	19	0
+31	1495	20	1
+31	1495	20	0
+32	31	0.002964223082	52
+32	192	0.324289728099	52
+32	641	0.337855080248	28
+32	693	0.338439890774	540
+32	749	1	540
+32	785	2	540
+32	821	3	540
+32	880	4	540
+32	916	5	540
+32	961	6	540
+32	999	7	540
+32	1036	8	540
+32	1072	9	540
+32	1109	10	540
+32	1145	11	540
+32	1182	12	540
+32	1218	13	540
+32	1255	14	540
+32	1291	15	540
+32	1328	16	540
+32	1364	17	540
+32	1401	18	540
+32	1459	19	540
+32	1495	20	540
+33	31	0.002964223082	0
+33	192	0.324289728099	0
+33	641	0.337855080248	0
+33	693	0.338439890774	0
+33	749	1	0
+33	785	2	0
+33	821	3	0
+33	880	4	0
+33	916	5	0
+33	961	6	0
+33	999	7	0
+33	1036	8	0
+33	1072	9	0
+33	1109	10	0
+33	1145	11	0
+33	1182	12	0
+33	1218	13	0
+33	1255	14	0
+33	1291	15	0
+33	1328	16	0
+33	1364	17	0
+33	1401	18	0
+33	1459	19	0
+33	1495	20	0
+34	31	0.002964223082	75
+34	192	0.324289728099	75
+34	641	0.337855080248	51
+34	693	0.338439890774	563
+34	749	1	563
+34	785	2	563
+34	821	3	563
+34	880	4	563
+34	916	5	563
+34	961	6	563
+34	999	7	563
+34	1036	8	563
+34	1072	9	563
+34	1109	10	563
+34	1145	11	563
+34	1182	12	563
+34	1218	13	563
+34	1255	14	563
+34	1291	15	563
+34	1328	16	563
+34	1364	17	563
+34	1401	18	563
+34	1459	19	563
+34	1495	20	563
+35	43	0.003312628345	75
+35	77	0.006674808937	75
+35	161	0.007882231011	75
+35	204	0.324638133362	75
+35	238	0.327104771086	75
+35	322	0.329222665994	75
+35	374	0.329981488822	75
+35	477	0.330571210056	75
+35	532	0.332558778944	51
+35	606	0.333143809976	71
+35	662	0.338107485511	51
+35	717	0.340740296037	563
+35	761	1.002300405263	563
+35	797	2.002300405263	563
+35	833	3.002300405263	563
+35	892	4.002300405263	563
+35	928	5.002300405263	563
+35	973	6.002300405263	563
+35	1011	7.002300405263	563
+35	1048	8.002300405263	563
+35	1084	9.002300405263	563
+35	1121	10.002300405263	563
+35	1157	11.002300405263	563
+35	1194	12.002300405263	563
+35	1230	13.002300405263	563
+35	1267	14.002300405263	563
+35	1303	15.002300405263	563
+35	1340	16.002300405263	563
+35	1376	17.002300405263	563
+35	1413	18.002300405263	563
+35	1471	19.002300405263	563
+36	43	0.003312628345	52
+36	77	0.006674808937	52
+36	161	0.007882231011	52
+36	204	0.324638133362	52
+36	238	0.327104771086	52
+36	322	0.329222665994	52
+36	374	0.329981488822	52
+36	477	0.330571210056	52
+36	532	0.332558778944	28
+36	606	0.333143809976	48
+36	662	0.338107485511	28
+36	717	0.340740296037	540
+36	761	1.002300405263	540
+36	797	2.002300405263	540
+36	833	3.002300405263	540
+36	892	4.002300405263	540
+36	928	5.002300405263	540
+36	973	6.002300405263	540
+36	1011	7.002300405263	540
+36	1048	8.002300405263	540
+36	1084	9.002300405263	540
+36	1121	10.002300405263	540
+36	1157	11.002300405263	540
+36	1194	12.002300405263	540
+36	1230	13.002300405263	540
+36	1267	14.002300405263	540
+36	1303	15.002300405263	540
+36	1340	16.002300405263	540
+36	1376	17.002300405263	540
+36	1413	18.002300405263	540
+36	1471	19.002300405263	540
+37	45	0.003312628345	32
+37	79	0.006674808937	32
+37	163	0.007882231011	32
+37	206	0.324638133362	32
+37	240	0.327104771086	32
+37	324	0.329222665994	32
+37	376	0.329981488822	32
+37	479	0.330571210056	32
+37	608	0.333143809976	28
+38	45	0.003312628345	1
+38	79	0.006674808937	2
+38	163	0.007882231011	3
+38	206	0.324638133362	4
+38	240	0.327104771086	5
+38	324	0.329222665994	6
+38	376	0.329981488822	7
+38	479	0.330571210056	8
+38	608	0.333143809976	9
+39	48	0.003312634233	75
+39	97	0.006675047102	75
+39	119	0.007236843228	75
+39	209	0.32463813925	75
+39	258	0.327105009251	75
+39	280	0.327710817307	75
+39	360	0.329981373819	75
+39	440	0.330486182367	51
+39	526	0.332558663941	51
+39	564	0.332811047002	51
+39	602	0.333143694973	71
+39	633	0.337854943043	51
+39	667	0.338107491399	51
+39	685	0.338439753569	71
+39	720	0.340740301925	563
+39	764	1.002300411151	563
+39	800	2.002300411151	563
+39	836	3.002300411151	563
+39	895	4.002300411151	563
+39	931	5.002300411151	563
+39	976	6.002300411151	563
+39	1014	7.002300411151	563
+39	1051	8.002300411151	563
+39	1087	9.002300411151	563
+39	1124	10.002300411151	563
+39	1160	11.002300411151	563
+39	1197	12.002300411151	563
+39	1233	13.002300411151	563
+39	1270	14.002300411151	563
+39	1306	15.002300411151	563
+39	1343	16.002300411151	563
+39	1379	17.002300411151	563
+39	1416	18.002300411151	563
+39	1474	19.002300411151	563
+40	48	0.003312634233	52
+40	97	0.006675047102	52
+40	119	0.007236843228	52
+40	209	0.32463813925	52
+40	258	0.327105009251	52
+40	280	0.327710817307	52
+40	360	0.329981373819	52
+40	526	0.332558663941	28
+40	633	0.337854943043	28
+41	50	0.003312634233	32
+41	99	0.006675047102	32
+41	121	0.007236843228	32
+41	211	0.32463813925	32
+41	260	0.327105009251	32
+41	282	0.327710817307	32
+41	362	0.329981373819	32
+42	50	0.003312634233	1
+42	99	0.006675047102	2
+42	121	0.007236843228	3
+42	211	0.32463813925	4
+42	260	0.327105009251	5
+42	282	0.327710817307	6
+42	362	0.329981373819	7
+43	53	0.003312658521	75
+43	124	0.007236908734	75
+43	176	0.007882534682	75
+43	214	0.324638163538	75
+43	285	0.327710882813	75
+43	337	0.329222969665	75
+43	467	0.330571081304	75
+43	566	0.332811112508	51
+43	636	0.337855008549	51
+43	669	0.338107515687	51
+43	687	0.338439819075	71
+43	722	0.340740326213	563
+43	766	1.002300435439	563
+43	802	2.002300435439	563
+43	838	3.002300435439	563
+43	897	4.002300435439	563
+43	933	5.002300435439	563
+43	978	6.002300435439	563
+43	1016	7.002300435439	563
+43	1053	8.002300435439	563
+43	1089	9.002300435439	563
+43	1126	10.002300435439	563
+43	1162	11.002300435439	563
+43	1199	12.002300435439	563
+43	1235	13.002300435439	563
+43	1272	14.002300435439	563
+43	1308	15.002300435439	563
+43	1345	16.002300435439	563
+43	1381	17.002300435439	563
+43	1418	18.002300435439	563
+43	1476	19.002300435439	563
+44	53	0.003312658521	52
+44	124	0.007236908734	52
+44	176	0.007882534682	52
+44	214	0.324638163538	52
+44	285	0.327710882813	52
+44	337	0.329222969665	52
+44	467	0.330571081304	52
+44	636	0.337855008549	28
+45	55	0.003312658521	32
+45	126	0.007236908734	32
+45	178	0.007882534682	32
+45	216	0.324638163538	32
+45	287	0.327710882813	32
+45	339	0.329222969665	32
+45	469	0.330571081304	32
+46	55	0.003312658521	1
+46	126	0.007236908734	2
+46	178	0.007882534682	3
+46	216	0.324638163538	4
+46	287	0.327710882813	5
+46	339	0.329222969665	6
+46	469	0.330571081304	7
+47	63	0.006326475373	32
+47	224	0.326756437522	32
+48	65	0.006326475373	52
+48	226	0.326756437522	52
+49	65	0.006326475373	52
+49	226	0.326756437522	52
+50	65	0.006326475373	1
+50	65	0.006326475373	0
+50	226	0.326756437522	1
+50	226	0.326756437522	0
+51	65	0.006326475373	52
+51	226	0.326756437522	52
+52	65	0.006326475373	0
+52	226	0.326756437522	0
+53	65	0.006326475373	75
+53	226	0.326756437522	75
+54	82	0.006674888023	75
+54	139	0.007237116572	75
+54	243	0.327104850172	75
+54	300	0.327711090651	75
+54	487	0.330682726134	75
+54	575	0.332811320346	51
+54	647	0.337855216387	51
+54	698	0.338440026913	71
+55	82	0.006674888023	52
+55	139	0.007237116572	52
+55	243	0.327104850172	52
+55	300	0.327711090651	52
+55	487	0.330682726134	52
+55	647	0.337855216387	28
+56	84	0.006674888023	32
+56	141	0.007237116572	32
+56	245	0.327104850172	32
+56	302	0.327711090651	32
+56	489	0.330682726134	32
+57	84	0.006674888023	1
+57	141	0.007237116572	2
+57	245	0.327104850172	3
+57	302	0.327711090651	4
+57	489	0.330682726134	5
+58	87	0.006674910812	75
+58	129	0.007236980433	75
+58	171	0.007882374104	75
+58	248	0.327104872961	75
+58	290	0.327710954512	75
+58	332	0.329222809087	75
+58	568	0.332811184207	51
+58	639	0.337855080248	51
+58	689	0.338439890774	71
+59	87	0.006674910812	52
+59	129	0.007236980433	52
+59	171	0.007882374104	52
+59	248	0.327104872961	52
+59	290	0.327710954512	52
+59	332	0.329222809087	52
+59	639	0.337855080248	28
+59	689	0.338439890774	48
+60	89	0.006674910812	32
+60	131	0.007236980433	32
+60	173	0.007882374104	32
+60	250	0.327104872961	32
+60	292	0.327710954512	32
+60	334	0.329222809087	32
+60	691	0.338439890774	28
+61	89	0.006674910812	1
+61	131	0.007236980433	2
+61	173	0.007882374104	3
+61	250	0.327104872961	4
+61	292	0.327710954512	5
+61	334	0.329222809087	6
+61	691	0.338439890774	7
+62	92	0.006674999079	75
+62	253	0.327104961228	75
+62	462	0.330570962985	75
+62	590	0.333107672864	75
+63	92	0.006674999079	52
+63	253	0.327104961228	52
+63	462	0.330570962985	52
+63	590	0.333107672864	52
+64	94	0.006674999079	32
+64	255	0.327104961228	32
+64	464	0.330570962985	32
+64	592	0.333107672864	32
+65	94	0.006674999079	1
+65	255	0.327104961228	2
+65	464	0.330570962985	3
+65	592	0.333107672864	4
+66	105	0.00688857517	32
+66	266	0.327362549249	32
+66	618	0.337602674985	28
+67	107	0.00688857517	52
+67	268	0.327362549249	52
+67	534	0.332558778944	28
+67	620	0.337602674985	28
+67	664	0.338107485511	48
+68	107	0.00688857517	52
+68	268	0.327362549249	52
+68	534	0.332558778944	28
+68	620	0.337602674985	28
+68	664	0.338107485511	48
+69	107	0.00688857517	1
+69	107	0.00688857517	0
+69	268	0.327362549249	1
+69	268	0.327362549249	0
+69	534	0.332558778944	1
+69	534	0.332558778944	0
+69	620	0.337602674985	1
+69	620	0.337602674985	0
+69	664	0.338107485511	1
+69	664	0.338107485511	0
+70	107	0.00688857517	52
+70	268	0.327362549249	52
+70	534	0.332558778944	28
+70	620	0.337602674985	28
+70	664	0.338107485511	48
+71	107	0.00688857517	0
+71	268	0.327362549249	0
+71	534	0.332558778944	0
+71	620	0.337602674985	0
+71	664	0.338107485511	0
+72	107	0.00688857517	75
+72	268	0.327362549249	75
+72	534	0.332558778944	51
+72	620	0.337602674985	51
+72	664	0.338107485511	71
+73	134	0.007237090686	75
+73	166	0.007882363466	75
+73	295	0.327711064765	75
+73	327	0.329222798449	75
+73	406	0.330233781854	51
+73	500	0.330818590402	71
+73	570	0.33281129446	51
+73	644	0.337855190501	51
+73	696	0.338440001027	71
+74	134	0.007237090686	52
+74	166	0.007882363466	52
+74	295	0.327711064765	52
+74	327	0.329222798449	52
+74	406	0.330233781854	28
+74	500	0.330818590402	48
+74	570	0.33281129446	28
+74	644	0.337855190501	28
+75	136	0.007237090686	32
+75	168	0.007882363466	32
+75	297	0.327711064765	32
+75	329	0.329222798449	32
+75	502	0.330818590402	28
+76	136	0.007237090686	1
+76	168	0.007882363466	2
+76	297	0.327711064765	3
+76	329	0.329222798449	4
+76	502	0.330818590402	5
+77	147	0.007533962953	32
+77	308	0.328874397936	32
+78	149	0.007533962953	52
+78	310	0.328874397936	52
+79	149	0.007533962953	52
+79	310	0.328874397936	52
+80	149	0.007533962953	1
+80	149	0.007533962953	0
+80	310	0.328874397936	1
+80	310	0.328874397936	0
+81	149	0.007533962953	52
+81	310	0.328874397936	52
+82	149	0.007533962953	0
+82	310	0.328874397936	0
+83	149	0.007533962953	75
+83	310	0.328874397936	75
+84	346	0.329632973306	32
+84	512	0.332306263428	28
+85	348	0.329632973306	52
+85	408	0.330233781854	28
+85	514	0.332306263428	28
+85	572	0.33281129446	48
+86	348	0.329632973306	52
+86	408	0.330233781854	28
+86	514	0.332306263428	28
+86	572	0.33281129446	48
+87	348	0.329632973306	1
+87	348	0.329632973306	0
+87	408	0.330233781854	1
+87	408	0.330233781854	0
+87	514	0.332306263428	1
+87	514	0.332306263428	0
+87	572	0.33281129446	1
+87	572	0.33281129446	0
+88	348	0.329632973306	52
+88	408	0.330233781854	28
+88	514	0.332306263428	28
+88	572	0.33281129446	48
+89	348	0.329632973306	0
+89	408	0.330233781854	0
+89	514	0.332306263428	0
+89	572	0.33281129446	0
+90	348	0.329632973306	75
+90	408	0.330233781854	51
+90	514	0.332306263428	51
+90	572	0.33281129446	71
+91	365	0.32998137758	75
+91	442	0.330486186128	51
+91	529	0.332558667702	51
+91	604	0.333143698734	71
+92	365	0.32998137758	52
+92	442	0.330486186128	28
+92	529	0.332558667702	28
+93	367	0.32998137758	32
+94	367	0.32998137758	1
+95	369	0.32998137758	28
+96	370	0.32998137758	28
+97	371	0.32998137758	28
+97	444	0.330486186128	48
+98	371	0.32998137758	28
+98	444	0.330486186128	48
+99	371	0.32998137758	1
+99	371	0.32998137758	0
+99	444	0.330486186128	1
+99	444	0.330486186128	0
+100	371	0.32998137758	28
+100	444	0.330486186128	48
+101	371	0.32998137758	0
+101	444	0.330486186128	0
+102	371	0.32998137758	51
+102	444	0.330486186128	71
+103	392	0.330222668654	32
+104	394	0.330222668654	52
+105	394	0.330222668654	52
+106	394	0.330222668654	1
+106	394	0.330222668654	0
+107	394	0.330222668654	52
+108	394	0.330222668654	0
+109	394	0.330222668654	75
+110	407	0.330233781854	28
+111	426	0.330334431803	32
+112	428	0.330334431803	52
+113	428	0.330334431803	52
+114	428	0.330334431803	1
+114	428	0.330334431803	0
+115	428	0.330334431803	52
+116	428	0.330334431803	0
+117	428	0.330334431803	75
+118	440	0.330486182367	51
+118	564	0.332811047002	51
+118	602	0.333143694973	71
+118	667	0.338107491399	51
+118	685	0.338439753569	71
+118	720	0.340740301925	563
+118	764	1.002300411151	563
+118	800	2.002300411151	563
+118	836	3.002300411151	563
+118	895	4.002300411151	563
+118	931	5.002300411151	563
+118	976	6.002300411151	563
+118	1014	7.002300411151	563
+118	1051	8.002300411151	563
+118	1087	9.002300411151	563
+118	1124	10.002300411151	563
+118	1160	11.002300411151	563
+118	1197	12.002300411151	563
+118	1233	13.002300411151	563
+118	1270	14.002300411151	563
+118	1306	15.002300411151	563
+118	1343	16.002300411151	563
+118	1379	17.002300411151	563
+118	1416	18.002300411151	563
+118	1474	19.002300411151	563
+119	472	0.330571090965	75
+120	472	0.330571090965	52
+121	474	0.330571090965	32
+122	474	0.330571090965	1
+123	513	0.332306263428	28
+124	533	0.332558778944	28
+125	550	0.332759027015	32
+126	552	0.332759027015	52
+127	552	0.332759027015	52
+128	552	0.332759027015	1
+128	552	0.332759027015	0
+129	552	0.332759027015	52
+130	552	0.332759027015	0
+131	552	0.332759027015	75
+132	566	0.332811112508	51
+132	669	0.338107515687	51
+132	687	0.338439819075	71
+132	722	0.340740326213	563
+132	766	1.002300435439	563
+132	802	2.002300435439	563
+132	838	3.002300435439	563
+132	897	4.002300435439	563
+132	933	5.002300435439	563
+132	978	6.002300435439	563
+132	1016	7.002300435439	563
+132	1053	8.002300435439	563
+132	1089	9.002300435439	563
+132	1126	10.002300435439	563
+132	1162	11.002300435439	563
+132	1199	12.002300435439	563
+132	1235	13.002300435439	563
+132	1272	14.002300435439	563
+132	1308	15.002300435439	563
+132	1345	16.002300435439	563
+132	1381	17.002300435439	563
+132	1418	18.002300435439	563
+132	1476	19.002300435439	563
+133	568	0.332811184207	51
+134	575	0.332811320346	51
+134	698	0.338440026913	71
+135	604	0.333143698734	71
+136	619	0.337602674985	28
+137	640	0.337855080248	28
+138	696	0.338440001027	71
+139	718	0.340740296037	1
+139	762	1.002300405263	2
+139	798	2.002300405263	3
+139	834	3.002300405263	4
+139	893	4.002300405263	5
+139	929	5.002300405263	6
+139	974	6.002300405263	7
+139	1012	7.002300405263	8
+139	1049	8.002300405263	9
+139	1085	9.002300405263	10
+139	1122	10.002300405263	11
+139	1158	11.002300405263	12
+139	1195	12.002300405263	13
+139	1231	13.002300405263	14
+139	1268	14.002300405263	15
+139	1304	15.002300405263	16
+139	1341	16.002300405263	17
+139	1377	17.002300405263	18
+139	1414	18.002300405263	19
+139	1472	19.002300405263	20
+140	718	0.340740296037	1
+140	762	1.002300405263	2
+140	798	2.002300405263	3
+140	834	3.002300405263	4
+140	893	4.002300405263	5
+140	929	5.002300405263	6
+140	974	6.002300405263	7
+140	1012	7.002300405263	8
+140	1049	8.002300405263	9
+140	1085	9.002300405263	10
+140	1122	10.002300405263	11
+140	1158	11.002300405263	12
+140	1195	12.002300405263	13
+140	1231	13.002300405263	14
+140	1268	14.002300405263	15
+140	1304	15.002300405263	16
+140	1341	16.002300405263	17
+140	1377	17.002300405263	18
+140	1414	18.002300405263	19
+140	1472	19.002300405263	20
+141	1497	0.1	0
+141	1497	0.2	0
+141	1497	0.3	0
+141	1497	0.4	0
+141	1497	0.5	0
+141	1497	0.6	0
+141	1497	0.7	0
+141	1497	0.8	0
+141	1497	0.9	0
+141	1497	1	0
+141	1497	1.1	0
+141	1497	1.2	0
+141	1497	1.3	0
+141	1497	1.4	0
+141	1497	1.5	0
+141	1497	1.6	0
+141	1497	1.7	0
+141	1497	1.8	0
+141	1497	1.9	0
+141	1497	2	0
+141	1497	2.1	0
+141	1497	2.2	0
+141	1497	2.3	0
+141	1497	2.4	0
+141	1497	2.5	0
+141	1497	2.6	0
+141	1497	2.7	0
+141	1497	2.8	0
+141	1497	2.9	0
+141	1497	3	0
+141	1497	3.1	0
+141	1497	3.2	0
+141	1497	3.3	0
+141	1497	3.4	0
+141	1497	3.5	0
+141	1497	3.6	0
+141	1497	3.7	0
+141	1497	3.8	0
+141	1497	3.9	0
+141	1497	4	0
+141	1497	4.1	0
+141	1497	4.2	0
+141	1497	4.3	0
+141	1497	4.4	0
+141	1497	4.5	0
+141	1497	4.6	0
+141	1497	4.7	0
+141	1497	4.8	0
+141	1497	4.9	0
+141	1497	5	0
+141	1497	5.1	0
+141	1497	5.2	0
+141	1497	5.3	0
+141	1497	5.4	0
+141	1497	5.5	0
+141	1497	5.6	0
+141	1497	5.7	0
+141	1497	5.8	0
+141	1497	5.9	0
+141	1497	6	0
+141	1497	6.1	0
+141	1497	6.2	0
+141	1497	6.3	0
+141	1497	6.4	0
+141	1497	6.5	0
+141	1497	6.6	0
+141	1497	6.7	0
+141	1497	6.8	0
+141	1497	6.9	0
+141	1497	7	0
+141	1497	7.1	0
+141	1497	7.2	0
+141	1497	7.3	0
+141	1497	7.4	0
+141	1497	7.5	0
+141	1497	7.6	0
+141	1497	7.7	0
+141	1497	7.8	0
+141	1497	7.9	0
+141	1497	8	0
+141	1497	8.1	0
+141	1497	8.2	0
+141	1497	8.3	0
+141	1497	8.4	0
+141	1497	8.5	0
+141	1497	8.6	0
+141	1497	8.7	0
+141	1497	8.8	0
+141	1497	8.9	0
+141	1497	9	0
+141	1497	9.1	0
+141	1497	9.2	0
+141	1497	9.3	0
+141	1497	9.4	0
+141	1497	9.5	0
+141	1497	9.6	0
+141	1497	9.7	0
+141	1497	9.8	0
+141	1497	9.9	0
+141	1497	10	0
+141	1497	10.1	0
+141	1497	10.2	0
+141	1497	10.3	0
+141	1497	10.4	0
+141	1497	10.5	0
+141	1497	10.6	0
+141	1497	10.7	0
+141	1497	10.8	0
+141	1497	10.9	0
+141	1497	11	0
+141	1497	11.1	0
+141	1497	11.2	0
+141	1497	11.3	0
+141	1497	11.4	0
+141	1497	11.5	0
+141	1497	11.6	0
+141	1497	11.7	0
+141	1497	11.8	0
+141	1497	11.9	0
+141	1497	12	0
+141	1497	12.1	0
+141	1497	12.2	0
+141	1497	12.3	0
+141	1497	12.4	0
+141	1497	12.5	0
+141	1497	12.6	0
+141	1497	12.7	0
+141	1497	12.8	0
+141	1497	12.9	0
+141	1497	13	0
+141	1497	13.1	0
+141	1497	13.2	0
+141	1497	13.3	0
+141	1497	13.4	0
+141	1497	13.5	0
+141	1497	13.6	0
+141	1497	13.7	0
+141	1497	13.8	0
+141	1497	13.9	0
+141	1497	14	0
+141	1497	14.1	0
+141	1497	14.2	0
+141	1497	14.3	0
+141	1497	14.4	0
+141	1497	14.5	0
+141	1497	14.6	0
+141	1497	14.7	0
+141	1497	14.8	0
+141	1497	14.9	0
+141	1497	15	0
+141	1497	15.1	0
+141	1497	15.2	0
+141	1497	15.3	0
+141	1497	15.4	0
+141	1497	15.5	0
+141	1497	15.6	0
+141	1497	15.7	0
+141	1497	15.8	0
+141	1497	15.9	0
+141	1497	16	0
+141	1497	16.1	0
+141	1497	16.2	0
+141	1497	16.3	0
+141	1497	16.4	0
+141	1497	16.5	0
+141	1497	16.6	0
+141	1497	16.7	0
+141	1497	16.8	0
+141	1497	16.9	0
+141	1497	17	0
+141	1497	17.1	0
+141	1497	17.2	0
+141	1497	17.3	0
+141	1497	17.4	0
+141	1497	17.5	0
+141	1497	17.6	0
+141	1497	17.7	0
+141	1497	17.8	0
+141	1497	17.9	0
+141	1497	18	0
+141	1497	18.1	0
+141	1497	18.2	0
+141	1497	18.3	0
+141	1497	18.4	0
+141	1497	18.5	0
+141	1497	18.6	0
+141	1497	18.7	0
+141	1497	18.8	0
+141	1497	18.9	0
+141	1497	19	0
+141	1497	19.1	0
+141	1497	19.2	0
+141	1497	19.3	0
+141	1497	19.4	0
+141	1497	19.5	0
+141	1497	19.6	0
+141	1497	19.7	0
+141	1497	19.8	0
+141	1497	19.9	0
+141	1497	20	0
+142	1497	0.1	0
+142	1497	0.2	0
+142	1497	0.3	0
+142	1497	0.4	0
+142	1497	0.5	0
+142	1497	0.6	0
+142	1497	0.7	0
+142	1497	0.8	0
+142	1497	0.9	0
+142	1497	1	0
+142	1497	1.1	0
+142	1497	1.2	0
+142	1497	1.3	0
+142	1497	1.4	0
+142	1497	1.5	0
+142	1497	1.6	0
+142	1497	1.7	0
+142	1497	1.8	0
+142	1497	1.9	0
+142	1497	2	0
+142	1497	2.1	0
+142	1497	2.2	0
+142	1497	2.3	0
+142	1497	2.4	0
+142	1497	2.5	0
+142	1497	2.6	0
+142	1497	2.7	0
+142	1497	2.8	0
+142	1497	2.9	0
+142	1497	3	0
+142	1497	3.1	0
+142	1497	3.2	0
+142	1497	3.3	0
+142	1497	3.4	0
+142	1497	3.5	0
+142	1497	3.6	0
+142	1497	3.7	0
+142	1497	3.8	0
+142	1497	3.9	0
+142	1497	4	0
+142	1497	4.1	0
+142	1497	4.2	0
+142	1497	4.3	0
+142	1497	4.4	0
+142	1497	4.5	0
+142	1497	4.6	0
+142	1497	4.7	0
+142	1497	4.8	0
+142	1497	4.9	0
+142	1497	5	0
+142	1497	5.1	0
+142	1497	5.2	0
+142	1497	5.3	0
+142	1497	5.4	0
+142	1497	5.5	0
+142	1497	5.6	0
+142	1497	5.7	0
+142	1497	5.8	0
+142	1497	5.9	0
+142	1497	6	0
+142	1497	6.1	0
+142	1497	6.2	0
+142	1497	6.3	0
+142	1497	6.4	0
+142	1497	6.5	0
+142	1497	6.6	0
+142	1497	6.7	0
+142	1497	6.8	0
+142	1497	6.9	0
+142	1497	7	0
+142	1497	7.1	0
+142	1497	7.2	0
+142	1497	7.3	0
+142	1497	7.4	0
+142	1497	7.5	0
+142	1497	7.6	0
+142	1497	7.7	0
+142	1497	7.8	0
+142	1497	7.9	0
+142	1497	8	0
+142	1497	8.1	0
+142	1497	8.2	0
+142	1497	8.3	0
+142	1497	8.4	0
+142	1497	8.5	0
+142	1497	8.6	0
+142	1497	8.7	0
+142	1497	8.8	0
+142	1497	8.9	0
+142	1497	9	0
+142	1497	9.1	0
+142	1497	9.2	0
+142	1497	9.3	0
+142	1497	9.4	0
+142	1497	9.5	0
+142	1497	9.6	0
+142	1497	9.7	0
+142	1497	9.8	0
+142	1497	9.9	0
+142	1497	10	0
+142	1497	10.1	0
+142	1497	10.2	0
+142	1497	10.3	0
+142	1497	10.4	0
+142	1497	10.5	0
+142	1497	10.6	0
+142	1497	10.7	0
+142	1497	10.8	0
+142	1497	10.9	0
+142	1497	11	0
+142	1497	11.1	0
+142	1497	11.2	0
+142	1497	11.3	0
+142	1497	11.4	0
+142	1497	11.5	0
+142	1497	11.6	0
+142	1497	11.7	0
+142	1497	11.8	0
+142	1497	11.9	0
+142	1497	12	0
+142	1497	12.1	0
+142	1497	12.2	0
+142	1497	12.3	0
+142	1497	12.4	0
+142	1497	12.5	0
+142	1497	12.6	0
+142	1497	12.7	0
+142	1497	12.8	0
+142	1497	12.9	0
+142	1497	13	0
+142	1497	13.1	0
+142	1497	13.2	0
+142	1497	13.3	0
+142	1497	13.4	0
+142	1497	13.5	0
+142	1497	13.6	0
+142	1497	13.7	0
+142	1497	13.8	0
+142	1497	13.9	0
+142	1497	14	0
+142	1497	14.1	0
+142	1497	14.2	0
+142	1497	14.3	0
+142	1497	14.4	0
+142	1497	14.5	0
+142	1497	14.6	0
+142	1497	14.7	0
+142	1497	14.8	0
+142	1497	14.9	0
+142	1497	15	0
+142	1497	15.1	0
+142	1497	15.2	0
+142	1497	15.3	0
+142	1497	15.4	0
+142	1497	15.5	0
+142	1497	15.6	0
+142	1497	15.7	0
+142	1497	15.8	0
+142	1497	15.9	0
+142	1497	16	0
+142	1497	16.1	0
+142	1497	16.2	0
+142	1497	16.3	0
+142	1497	16.4	0
+142	1497	16.5	0
+142	1497	16.6	0
+142	1497	16.7	0
+142	1497	16.8	0
+142	1497	16.9	0
+142	1497	17	0
+142	1497	17.1	0
+142	1497	17.2	0
+142	1497	17.3	0
+142	1497	17.4	0
+142	1497	17.5	0
+142	1497	17.6	0
+142	1497	17.7	0
+142	1497	17.8	0
+142	1497	17.9	0
+142	1497	18	0
+142	1497	18.1	0
+142	1497	18.2	0
+142	1497	18.3	0
+142	1497	18.4	0
+142	1497	18.5	0
+142	1497	18.6	0
+142	1497	18.7	0
+142	1497	18.8	0
+142	1497	18.9	0
+142	1497	19	0
+142	1497	19.1	0
+142	1497	19.2	0
+142	1497	19.3	0
+142	1497	19.4	0
+142	1497	19.5	0
+142	1497	19.6	0
+142	1497	19.7	0
+142	1497	19.8	0
+142	1497	19.9	0
+142	1497	20	0
+

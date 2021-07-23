@@ -1,0 +1,1782 @@
+file 2221111 1586157471                                         
+version 2
+run MoreDynamic-blackhole-0-20200316-09:19:31-32350
+attr configname MoreDynamic-blackhole
+attr datetime 20200316-09:19:31
+attr experiment MoreDynamic-blackhole
+attr inifile AODVgrayhole.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network AODVgrayhole
+attr processid 32350
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.host[*].hasStatus true
+param *.scenarioManager.script "xmldoc(\"moreDynamic.xml\")"
+param *.host[*].wlan[*].radio.transmitter.communicationRange 250m
+param **.wlan[*].typename "\"AckingWirelessInterface\""
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.headerLength 23B
+param **.wlan[*].radio.typename "\"UnitDiskRadio\""
+param **.wlan[*].radio.transmitter.headerLength 96b
+param **.wlan[*].radio.transmitter.communicationRange 250m
+param **.wlan[*].radio.transmitter.interferenceRange 0m
+param **.wlan[*].radio.transmitter.detectionRange 0m
+param **.wlan[*].radio.receiver.ignoreInterference true
+param *.numHosts 18
+param **.host[*].mobility.typename "\"StationaryMobility\""
+param **.mobility.constraintAreaMinZ 0m
+param **.mobility.constraintAreaMaxZ 0m
+param **.mobility.constraintAreaMinX 5m
+param **.mobility.constraintAreaMinY 5m
+param **.mobility.constraintAreaMaxX 785m
+param **.mobility.constraintAreaMaxY 490m
+param *.visualizer.sceneVisualizer.descriptionFigure "\"title\""
+param *.visualizer.dataLinkVisualizer.displayLinks true
+param *.visualizer.networkRouteVisualizer.displayRoutes true
+param *.visualizer.networkRouteVisualizer.lineShift 0
+param *.visualizer.networkRouteVisualizer.packetFilter "\"UDPData*\""
+param *.visualizer.physicalLinkVisualizer.packetFilter "\"UDPData*\""
+param *.sender.numApps 1
+param *.sender.app[0].typename "\"UdpBasicApp\""
+param *.sender.app[0].destAddresses "\"receiver\""
+param *.sender.app[0].destPort 1000
+param *.sender.app[0].sendInterval 1s
+param *.sender.app[0].startTime 0s
+param *.sender.app[0].messageLength 512Byte
+param *.sender.app[0].packetName "\"UDPdata\""
+param *.receiver.numApps 1
+param *.receiver.app[0].typename "\"UdpSink\""
+param *.receiver.app[0].localPort 1000
+param **.hasStatus true
+
+vector 0 AODVgrayhole.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+0	69686 24 0 0 0 0 3 0 4 4 16
+vector 1 AODVgrayhole.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+1	69710 24 0 0 0 0 3 0 4 4 16
+vector 2 AODVgrayhole.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+2	69734 24 0 0 0 0 3 0 4 4 16
+vector 3 AODVgrayhole.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+3	69758 24 0 0 0 0 3 0 4 4 16
+vector 4 AODVgrayhole.host[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+4	69782 39 0 25418 0 25.5 4 0 4 4 16
+vector 5 AODVgrayhole.host[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+5	69821 24 0 0 0 0 3 0 4 4 16
+vector 6 AODVgrayhole.host[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+6	69845 24 0 0 0 0 3 0 4 4 16
+vector 7 AODVgrayhole.host[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+7	69869 39 0 25419 0 25.5 4 0 4 4 16
+vector 8 AODVgrayhole.host[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+8	69908 24 0 0 0 0 3 0 4 4 16
+vector 9 AODVgrayhole.host[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+9	69932 24 0 0 0 0 3 0 4 4 16
+vector 10 AODVgrayhole.host[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+10	69956 43 0 25416 0 25.5 4 0 4 4 16
+vector 11 AODVgrayhole.host[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+11	69999 27 0 0 0 0 3 0 4 4 16
+vector 12 AODVgrayhole.host[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+12	70026 27 0 0 0 0 3 0 4 4 16
+vector 13 AODVgrayhole.host[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+13	70053 27 0 0 0 0 3 0 4 4 16
+vector 14 AODVgrayhole.host[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+14	70080 43 0 25420 0 25.5 4 0 4 4 16
+vector 15 AODVgrayhole.host[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+15	70123 43 0 25415 0 25.5 4 0 4 4 16
+vector 16 AODVgrayhole.host[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+16	70166 43 0 25414 0 25.5 4 0 4 4 16
+vector 17 AODVgrayhole.host[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+17	70209 43 0 25417 0 25.5 4 0 4 4 16
+vector 18 AODVgrayhole.sender.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+18	70252 27 0 0 0 0 3 0 4 4 16
+vector 19 AODVgrayhole.receiver.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+19	70279 27 0 0 0 0 3 0 4 4 16
+vector 20 AODVgrayhole.ntu_Grayholer.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+20	70306 27 0 0 0 0 3 0 4 4 16
+vector 21 AODVgrayhole.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+21	70333 16192 0 112743 0 176.446340923782 603 1 3 1226 3048
+vector 22 AODVgrayhole.host[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+22	86525 2169 0 111244 0 175.815676693776 81 1 2 121 201
+vector 23 AODVgrayhole.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+23	88694 55634 0 114383 0 179.004601368973 2044 1 3 4096 10196
+vector 24 AODVgrayhole.host[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+24	144328 2697 0 112416 0 176.34556872548 101 1 2 151 251
+vector 25 AODVgrayhole.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+25	147025 73403 0 114341 0 179.002300707226 2701 1 3 5423 13513
+vector 26 AODVgrayhole.host[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+26	220428 20497 0 114376 0 179.004600707226 747 1 2 1120 1866
+vector 27 AODVgrayhole.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+27	240925 29707 0 114221 0 178.009202735943 1097 1 3 2208 5490
+vector 28 AODVgrayhole.host[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+28	270632 3353 0 112283 0 176.34377971194 125 1 2 187 311
+vector 29 AODVgrayhole.host[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+29	273985 7053 0 25418 0 25.5 274 0 3 545 1343
+vector 30 AODVgrayhole.host[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+30	281038 439 0 25418 0 25.5 18 0 2 25 41
+vector 31 AODVgrayhole.host[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+31	281477 28881 0 114223 0 178.009202759016 1066 1 3 2141 5317
+vector 32 AODVgrayhole.host[5].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+32	310358 4489 0 112028 0 176.341565899432 167 1 2 250 416
+vector 33 AODVgrayhole.host[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+33	314847 27355 0 114216 0 178.009202647852 1010 1 3 2022 5008
+vector 34 AODVgrayhole.host[6].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+34	342202 2273 0 112090 0 176.3416081899 85 1 2 127 211
+vector 35 AODVgrayhole.host[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+35	344475 11771 0 25419 0 25.5 454 0 3 916 2276
+vector 36 AODVgrayhole.host[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+36	356246 2247 0 25419 0 25.5 88 0 2 130 216
+vector 37 AODVgrayhole.host[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+37	358493 60291 0 114379 0 179.004601092969 2209 1 3 4423 11027
+vector 38 AODVgrayhole.host[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+38	418784 2903 0 110919 0 175.812620981682 109 1 2 163 271
+vector 39 AODVgrayhole.host[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+39	421687 62496 0 114381 0 179.004601188269 2301 1 3 4623 11497
+vector 40 AODVgrayhole.host[9].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+40	484183 15165 0 114203 0 178.009201933711 557 1 2 835 1391
+vector 41 AODVgrayhole.host[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+41	499348 7873 0 25416 0 25.5 304 0 3 605 1501
+vector 42 AODVgrayhole.host[10].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+42	507221 589 0 25416 0 25.5 24 0 2 34 56
+vector 43 AODVgrayhole.host[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+43	507810 65669 0 114377 0 179.004601024389 2411 1 3 4831 12037
+vector 44 AODVgrayhole.host[11].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+44	573479 12007 0 113784 0 177.01150263635 443 1 2 664 1106
+vector 45 AODVgrayhole.host[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+45	585486 51981 0 114390 0 179.004601484349 1904 1 3 3811 9503
+vector 46 AODVgrayhole.host[12].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+46	637467 2495 0 112203 0 176.343610386747 93 1 2 139 231
+vector 47 AODVgrayhole.host[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+47	639962 16544 0 112733 0 176.446340904831 617 1 3 1250 3108
+vector 48 AODVgrayhole.host[13].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+48	656506 2009 0 111170 0 175.81354219817 75 1 2 112 186
+vector 49 AODVgrayhole.host[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+49	658515 1111 0 25420 0 25.5 44 0 3 85 211
+vector 50 AODVgrayhole.host[14].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+50	659626 233 0 25420 0 25.5 10 0 2 13 21
+vector 51 AODVgrayhole.host[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+51	659859 9987 0 25415 0 25.5 387 0 3 785 1953
+vector 52 AODVgrayhole.host[15].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+52	669846 1333 0 25415 0 25.5 52 0 2 76 126
+vector 53 AODVgrayhole.host[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+53	671179 10408 0 25414 0 25.5 402 0 3 810 2010
+vector 54 AODVgrayhole.host[16].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+54	681587 1009 0 25414 0 25.5 40 0 2 58 96
+vector 55 AODVgrayhole.host[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+55	682596 2507 0 25417 0 25.5 98 0 3 193 481
+vector 56 AODVgrayhole.host[17].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+56	685103 491 0 25417 0 25.5 20 0 2 28 46
+vector 57 AODVgrayhole.sender.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+57	685594 37354 0 114388 0 179.004601414452 1373 1 3 2745 6847
+vector 58 AODVgrayhole.sender.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+58	722948 18016 0 114451 0 180 790 1 2 1185 1975
+vector 59 AODVgrayhole.receiver.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+59	740964 10717 0 112304 0 176.343780490889 398 1 3 795 1953
+vector 60 AODVgrayhole.receiver.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+60	751681 3895 0 112732 0 176.446340145196 145 1 2 217 361
+vector 61 AODVgrayhole.ntu_Grayholer.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+61	755576 39473 0 114385 0 179.004601381822 1459 1 3 2918 7270
+vector 62 AODVgrayhole.ntu_Grayholer.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+62	795049 15593 0 114164 0 178.006901381822 575 1 2 862 1436
+vector 63 AODVgrayhole.sender.app[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+63	810642 2994 45 114447 0 180 181 512 512 92672 47448064
+vector 64 AODVgrayhole.sender.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+64	813636 6084 48 114448 0 180 292 20 520 97284 49033872
+vector 65 AODVgrayhole.sender.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+65	819720 9258 55 114450 0.002964223082 180 395 28 540 156696 81913568
+vector 66 AODVgrayhole.sender.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+66	828978 9258 55 114450 0.002964223082 180 395 28 540 156696 81913568
+vector 67 AODVgrayhole.sender.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+67	838236 17166 55 114450 0.002964223082 180 790 0 1 395 395
+vector 68 AODVgrayhole.sender.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+68	855402 9258 55 114450 0.002964223082 180 395 28 540 156696 81913568
+vector 69 AODVgrayhole.sender.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+69	864660 8609 55 114450 0.002964223082 180 395 0 0.002300812666 0.004462221295 9.9654261855417e-06
+vector 70 AODVgrayhole.sender.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+70	873269 9258 55 114450 0.002964223082 180 395 51 563 165781 89330539
+vector 71 AODVgrayhole.host[10].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+71	882527 4022 79 25374 0.003312550894 25.004601211809 146 51 563 48666 25060298
+vector 72 AODVgrayhole.host[10].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+72	886549 1337 79 22553 0.003312550894 15.334308624516 50 28 56 2424 120224
+vector 73 AODVgrayhole.host[10].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+73	887886 1231 81 22555 0.003312550894 15.334308624516 46 20 36 1392 43008
+vector 74 AODVgrayhole.host[10].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+74	889117 1222 81 22555 0.003312550894 15.334308624516 46 1 46 1081 33511
+vector 75 AODVgrayhole.host[8].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+75	890339 31464 84 114380 0.003312666381 179.004601092969 1088 51 563 400984 210748592
+vector 76 AODVgrayhole.host[8].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+76	921803 6000 84 113924 0.003312666381 177.340619442711 216 28 540 12508 1683056
+vector 77 AODVgrayhole.host[8].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+77	927803 5382 86 112440 0.003312666381 176.345569549007 194 20 36 5964 186384
+vector 78 AODVgrayhole.host[8].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+78	933185 5468 86 112440 0.003312666381 176.345569549007 194 1 194 18915 2452645
+vector 79 AODVgrayhole.host[11].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+79	938653 34114 89 114378 0.003312837701 179.004601024389 1183 51 563 420653 219359959
+vector 80 AODVgrayhole.host[11].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+80	972767 12101 89 113921 0.003312837701 177.340619374131 429 28 540 67756 28525136
+vector 81 AODVgrayhole.host[11].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+81	984868 8771 91 112430 0.003312837701 176.345569376305 315 20 36 9624 297280
+vector 82 AODVgrayhole.host[11].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+82	993639 8978 91 112430 0.003312837701 176.345569376305 315 1 315 49770 10468290
+vector 83 AODVgrayhole.host[2].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+83	1002617 37956 94 114342 0.003312930308 179.002300707226 1323 51 563 418529 212305187
+vector 84 AODVgrayhole.host[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+84	1040573 19303 94 114342 0.003312930308 179.002300707226 676 28 540 160604 76570992
+vector 85 AODVgrayhole.host[2].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+85	1059876 10971 96 112865 0.003312930308 176.454354417735 394 20 36 12192 380928
+vector 86 AODVgrayhole.host[2].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+86	1070847 11257 96 112865 0.003312930308 176.454354417735 394 1 394 77815 20465345
+vector 87 AODVgrayhole.host[7].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+87	1082104 5946 99 25366 0.003313035748 25.004600919887 217 51 563 59619 29166769
+vector 88 AODVgrayhole.host[7].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+88	1088050 3289 99 22563 0.003313035748 15.334308749916 122 28 540 17264 6949536
+vector 89 AODVgrayhole.host[7].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+89	1091339 2384 101 22565 0.003313035748 15.334308749916 89 20 36 2784 87936
+vector 90 AODVgrayhole.host[7].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+90	1093723 2375 101 22565 0.003313035748 15.334308749916 89 1 89 4005 238965
+vector 91 AODVgrayhole.host[7].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+91	1096098 454 119 22033 0.006037451635 15.332396299267 17 20 32 504 15200
+vector 92 AODVgrayhole.host[7].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+92	1096552 1177 121 22035 0.006037451635 15.332396299267 43 28 540 13348 6751312
+vector 93 AODVgrayhole.host[7].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+93	1097729 1177 121 22035 0.006037451635 15.332396299267 43 28 540 13348 6751312
+vector 94 AODVgrayhole.host[7].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+94	1098906 2222 121 22035 0.006037451635 15.332396299267 86 0 1 43 43
+vector 95 AODVgrayhole.host[7].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+95	1101128 1177 121 22035 0.006037451635 15.332396299267 43 28 540 13348 6751312
+vector 96 AODVgrayhole.host[7].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+96	1102305 1111 121 22035 0.006037451635 15.332396299267 43 0 0 0 0
+vector 97 AODVgrayhole.host[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+97	1103416 1177 121 22035 0.006037451635 15.332396299267 43 51 563 14337 7388067
+vector 98 AODVgrayhole.host[11].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+98	1104593 3350 144 112339 0.006326654553 176.344500298867 120 20 36 3536 105152
+vector 99 AODVgrayhole.host[11].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+99	1107943 6315 146 113749 0.006326654553 177.00920263635 221 28 540 57404 28001296
+vector 100 AODVgrayhole.host[11].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+100	1114258 6536 146 113749 0.006326654553 177.00920263635 221 28 540 57404 28001296
+vector 101 AODVgrayhole.host[11].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+101	1120794 12440 146 113749 0.006326654553 177.00920263635 442 0 1 221 221
+vector 102 AODVgrayhole.host[11].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+102	1133234 6536 146 113749 0.006326654553 177.00920263635 221 28 540 57404 28001296
+vector 103 AODVgrayhole.host[11].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+103	1139770 6259 146 113749 0.006326654553 177.00920263635 221 0 0.096752659394 0.185922138312 0.016869678365852
+vector 104 AODVgrayhole.host[11].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+104	1146029 6536 146 113749 0.006326654553 177.00920263635 221 51 563 62487 30758789
+vector 105 AODVgrayhole.host[9].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+105	1152565 33066 175 114382 0.006385888906 179.004601188269 1115 51 563 340561 171300627
+vector 106 AODVgrayhole.host[9].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+106	1185631 15566 175 114166 0.006385888906 178.006901933711 532 28 540 85124 36011024
+vector 107 AODVgrayhole.host[9].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+107	1201197 11139 177 114022 0.006385888906 177.341204500097 385 20 44 11868 369136
+vector 108 AODVgrayhole.host[9].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+108	1212336 11416 177 114022 0.006385888906 177.341204500097 385 1 385 74305 19096385
+vector 109 AODVgrayhole.ntu_Grayholer.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+109	1223752 21263 180 114386 0.006385919623 179.004601381822 717 51 563 251443 130867405
+vector 110 AODVgrayhole.ntu_Grayholer.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+110	1245015 15321 180 114386 0.006385919623 179.004601381822 515 28 540 167492 85099952
+vector 111 AODVgrayhole.ntu_Grayholer.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+111	1260336 6049 182 112906 0.006385919623 176.454686846917 210 20 36 6272 189312
+vector 112 AODVgrayhole.ntu_Grayholer.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+112	1266385 6151 182 112906 0.006385919623 176.454686846917 210 1 210 22155 3109085
+vector 113 AODVgrayhole.ntu_Grayholer.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+113	1272536 4247 184 112828 0.006385919623 176.454005743139 147 20 36 4408 133248
+vector 114 AODVgrayhole.ntu_Grayholer.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+114	1276783 78 185 3721 0.006385919623 1.006385919623 3 28 28 84 2352
+vector 115 AODVgrayhole.ntu_Grayholer.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+115	1276861 8495 186 114132 0.006385919623 178.004601381822 287 28 540 77856 38286560
+vector 116 AODVgrayhole.ntu_Grayholer.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+116	1285356 8495 186 114132 0.006385919623 178.004601381822 287 28 540 77856 38286560
+vector 117 AODVgrayhole.ntu_Grayholer.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+117	1293851 16156 186 114132 0.006385919623 178.004601381822 574 0 1 287 287
+vector 118 AODVgrayhole.ntu_Grayholer.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+118	1310007 8495 186 114132 0.006385919623 178.004601381822 287 28 540 77856 38286560
+vector 119 AODVgrayhole.ntu_Grayholer.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+119	1318502 8091 186 114132 0.006385919623 178.004601381822 287 0 0.096420010246 0.096420010246 0.0092968183758387
+vector 120 AODVgrayhole.ntu_Grayholer.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+120	1326593 8495 186 114132 0.006385919623 178.004601381822 287 51 563 84457 42019759
+vector 121 AODVgrayhole.host[15].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+121	1335088 5224 204 25383 0.006386044741 25.004601389333 185 51 563 45895 21813433
+vector 122 AODVgrayhole.host[15].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+122	1340312 2610 204 24992 0.006386044741 23.006901906127 94 28 540 7952 2247904
+vector 123 AODVgrayhole.host[15].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+123	1342922 2049 206 22371 0.006386044741 15.333046504397 74 20 36 2328 73792
+vector 124 AODVgrayhole.host[15].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+124	1344971 2040 206 22371 0.006386044741 15.333046504397 74 1 74 2775 137825
+vector 125 AODVgrayhole.host[1].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+125	1347011 29693 209 114384 0.006386222397 179.004601368973 998 51 563 318842 162265414
+vector 126 AODVgrayhole.host[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+126	1376704 7497 209 113932 0.006386222397 177.340619718715 260 28 540 14836 1806320
+vector 127 AODVgrayhole.host[1].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+127	1384201 6802 211 112207 0.006386222397 176.343610675831 236 20 36 7396 234000
+vector 128 AODVgrayhole.host[1].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+128	1391003 6930 211 112207 0.006386222397 176.343610675831 236 1 236 27966 4409306
+vector 129 AODVgrayhole.host[16].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+129	1397933 5416 214 25389 0.006386222685 25.004601538939 191 51 563 50289 24342815
+vector 130 AODVgrayhole.host[16].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+130	1403349 2273 214 22364 0.006386222685 15.33304641887 82 28 56 3964 197424
+vector 131 AODVgrayhole.host[16].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+131	1405622 1978 216 22366 0.006386222685 15.33304641887 71 20 36 2236 70960
+vector 132 AODVgrayhole.host[16].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+132	1407600 1969 216 22366 0.006386222685 15.33304641887 71 1 71 2556 121836
+vector 133 AODVgrayhole.host[4].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+133	1409569 3589 219 25376 0.006386224428 25.004601284703 127 51 563 35109 17178983
+vector 134 AODVgrayhole.host[4].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+134	1413158 1612 219 22558 0.006386224428 15.334308688909 58 28 56 2900 147088
+vector 135 AODVgrayhole.host[4].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+135	1414770 1531 221 22560 0.006386224428 15.334308688909 55 20 36 1716 54096
+vector 136 AODVgrayhole.host[4].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+136	1416301 1522 221 22560 0.006386224428 15.334308688909 55 1 55 1540 56980
+vector 137 AODVgrayhole.sender.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+137	1417823 20231 224 114389 0.006386264301 179.004601414452 679 51 563 235713 122285463
+vector 138 AODVgrayhole.sender.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+138	1438054 9277 224 113939 0.006386264301 177.340619764194 316 28 540 63988 29388592
+vector 139 AODVgrayhole.sender.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+139	1447331 5738 226 112243 0.006386264301 176.343760836261 200 20 36 6024 183552
+vector 140 AODVgrayhole.sender.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+140	1453069 5830 226 112243 0.006386264301 176.343760836261 200 1 200 20100 2686700
+vector 141 AODVgrayhole.host[17].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+141	1458899 1356 266 24999 0.006638483293 23.006901945492 48 51 563 12192 5849648
+vector 142 AODVgrayhole.host[17].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+142	1460255 494 266 21272 0.006638483293 15.32761597675 18 28 56 872 43840
+vector 143 AODVgrayhole.host[12].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+143	1460749 28013 300 114391 0.00667529216 179.004601484349 939 51 563 302981 154497067
+vector 144 AODVgrayhole.host[12].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+144	1488762 6760 300 113942 0.00667529216 177.340619834091 234 28 56 11676 592240
+vector 145 AODVgrayhole.host[12].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+145	1495522 6323 302 112420 0.00667529216 176.345569014564 219 20 36 6876 217840
+vector 146 AODVgrayhole.host[12].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+146	1501845 6434 302 112420 0.00667529216 176.345569014564 219 1 219 24090 3525170
+vector 147 AODVgrayhole.host[10].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+147	1508279 304 318 22701 0.006888497719 15.336208711089 11 32 32 352 11264
+vector 148 AODVgrayhole.host[10].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+148	1508583 304 320 22703 0.006888497719 15.336208711089 11 52 52 572 29744
+vector 149 AODVgrayhole.host[10].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+149	1508887 304 320 22703 0.006888497719 15.336208711089 11 52 52 572 29744
+vector 150 AODVgrayhole.host[10].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+150	1509191 586 320 22703 0.006888497719 15.336208711089 22 0 1 11 11
+vector 151 AODVgrayhole.host[10].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+151	1509777 304 320 22703 0.006888497719 15.336208711089 11 52 52 572 29744
+vector 152 AODVgrayhole.host[10].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+152	1510081 293 320 22703 0.006888497719 15.336208711089 11 0 0 0 0
+vector 153 AODVgrayhole.host[10].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+153	1510374 304 320 22703 0.006888497719 15.336208711089 11 75 75 825 61875
+vector 154 AODVgrayhole.host[8].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+154	1510678 1355 384 110845 0.007533995101 175.812272981682 47 28 36 1500 47920
+vector 155 AODVgrayhole.host[8].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+155	1512033 1559 386 110847 0.007533995101 175.812272981682 54 28 540 4684 1295472
+vector 156 AODVgrayhole.host[8].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+156	1513592 1559 386 110847 0.007533995101 175.812272981682 54 28 540 4684 1295472
+vector 157 AODVgrayhole.host[8].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+157	1515151 3002 386 110847 0.007533995101 175.812272981682 108 0 1 54 54
+vector 158 AODVgrayhole.host[8].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+158	1518153 1559 386 110847 0.007533995101 175.812272981682 54 28 540 4684 1295472
+vector 159 AODVgrayhole.host[8].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+159	1519712 1501 386 110847 0.007533995101 175.812272981682 54 0 0 0 0
+vector 160 AODVgrayhole.host[8].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+160	1521213 1559 386 110847 0.007533995101 175.812272981682 54 51 563 5926 1539502
+vector 161 AODVgrayhole.host[2].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+161	1522772 3021 409 111804 0.007602658407 176.340367056968 105 20 32 3020 87696
+vector 162 AODVgrayhole.host[2].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+162	1525793 11250 411 114344 0.007602658407 179.002300707226 373 28 540 145260 75784304
+vector 163 AODVgrayhole.host[2].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+163	1537043 11250 411 114344 0.007602658407 179.002300707226 373 28 540 145260 75784304
+vector 164 AODVgrayhole.host[2].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+164	1548293 21235 411 114344 0.007602658407 179.002300707226 746 0 1 373 373
+vector 165 AODVgrayhole.host[2].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+165	1569528 11249 411 114344 0.007602658407 179.002300707226 373 28 540 145260 75784304
+vector 166 AODVgrayhole.host[2].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+166	1580777 10643 411 114344 0.007602658407 179.002300707226 373 0 0.091435008202 0.092683828735 0.0083619202776235
+vector 167 AODVgrayhole.host[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+167	1591420 11249 411 114344 0.007602658407 179.002300707226 373 51 563 153839 82663581
+vector 168 AODVgrayhole.host[2].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+168	1602669 84 758 43600 0.325555547926 50.358963968752 3 28 28 84 2352
+vector 169 AODVgrayhole.host[9].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+169	1602753 4212 799 112858 0.325586244656 176.454354295028 145 20 36 4316 129424
+vector 170 AODVgrayhole.host[9].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+170	1606965 8254 801 114168 0.325586244656 178.006901933711 278 28 540 72380 35362256
+vector 171 AODVgrayhole.host[9].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+171	1615219 8254 801 114168 0.325586244656 178.006901933711 278 28 540 72380 35362256
+vector 172 AODVgrayhole.host[9].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+172	1623473 15712 801 114168 0.325586244656 178.006901933711 556 0 2 280 282
+vector 173 AODVgrayhole.host[9].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+173	1639185 8254 801 114168 0.325586244656 178.006901933711 278 28 540 72380 35362256
+vector 174 AODVgrayhole.host[9].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+174	1647439 7910 801 114168 0.325586244656 178.006901933711 278 0 0.1 0.398729412227 0.037336243018538
+vector 175 AODVgrayhole.host[9].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+175	1655349 8254 801 114168 0.325586244656 178.006901933711 278 51 563 78774 38838798
+vector 176 AODVgrayhole.host[7].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+176	1663603 2752 895 25366 0.325807760587 25.004600919887 95 51 563 39549 21358551
+vector 177 AODVgrayhole.host[8].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+177	1666355 26336 898 114380 0.325807933669 179.004601092969 872 51 563 383508 208375904
+vector 178 AODVgrayhole.host[9].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+178	1692691 17500 900 114382 0.325808028969 179.004601188269 583 51 563 243201 131092471
+vector 179 AODVgrayhole.host[15].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+179	1710191 2614 910 25383 0.325808230033 25.004601389333 91 51 563 35781 19150011
+vector 180 AODVgrayhole.host[16].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+180	1712805 3143 914 25389 0.325808379639 25.004601538939 109 51 563 44439 23919669
+vector 181 AODVgrayhole.host[6].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+181	1715948 14145 956 114217 0.325934958797 178.009202647852 481 51 563 103619 46438089
+vector 182 AODVgrayhole.host[6].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+182	1730093 6311 956 112285 0.325934958797 176.343779800043 218 28 64 10960 559776
+vector 183 AODVgrayhole.host[6].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+183	1736404 5892 958 112287 0.325934958797 176.343779800043 203 20 44 6480 207616
+vector 184 AODVgrayhole.host[6].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+184	1742296 5987 958 112287 0.325934958797 176.343779800043 203 1 203 20706 2809114
+vector 185 AODVgrayhole.host[3].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+185	1748283 15568 963 114222 0.325935046888 178.009202735943 530 51 563 107082 46685450
+vector 186 AODVgrayhole.host[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+186	1763851 7389 963 112749 0.325935046888 176.446340924145 255 28 64 12620 638512
+vector 187 AODVgrayhole.host[3].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+187	1771240 6680 965 112751 0.325935046888 176.446340924145 230 20 44 7300 233392
+vector 188 AODVgrayhole.host[3].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+188	1777920 6802 965 112751 0.325935046888 176.446340924145 230 1 230 26565 4082155
+vector 189 AODVgrayhole.host[5].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+189	1784722 15066 968 114224 0.325935069961 178.009202759016 513 51 563 99063 42243569
+vector 190 AODVgrayhole.host[5].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+190	1799788 8150 968 112739 0.325935069961 176.446340908456 281 28 540 21364 5048208
+vector 191 AODVgrayhole.host[5].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+191	1807938 7103 970 112741 0.325935069961 176.446340908456 245 20 44 7776 248704
+vector 192 AODVgrayhole.host[5].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+192	1815041 7240 970 112741 0.325935069961 176.446340908456 245 1 245 30135 4932095
+vector 193 AODVgrayhole.host[17].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+193	1822281 862 1009 24999 0.326140786192 23.006901945492 30 51 563 10906 5756174
+vector 194 AODVgrayhole.host[1].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+194	1823143 1241 1028 112392 0.326666141954 176.34522072548 43 28 32 1372 43792
+vector 195 AODVgrayhole.host[1].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+195	1824384 1448 1030 112394 0.326666141954 176.34522072548 50 28 540 4476 1284624
+vector 196 AODVgrayhole.host[1].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+196	1825832 1448 1030 112394 0.326666141954 176.34522072548 50 28 540 4476 1284624
+vector 197 AODVgrayhole.host[1].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+197	1827280 2788 1030 112394 0.326666141954 176.34522072548 100 0 1 50 50
+vector 198 AODVgrayhole.host[1].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+198	1830068 1448 1030 112394 0.326666141954 176.34522072548 50 28 540 4476 1284624
+vector 199 AODVgrayhole.host[1].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+199	1831516 1394 1030 112394 0.326666141954 176.34522072548 50 0 0 0 0
+vector 200 AODVgrayhole.host[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+200	1832910 1448 1030 112394 0.326666141954 176.34522072548 50 51 563 5626 1516970
+vector 201 AODVgrayhole.host[5].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+201	1834358 1769 1160 111979 0.327898993927 176.341217899432 61 28 36 1876 57968
+vector 202 AODVgrayhole.host[5].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+202	1836127 2421 1162 111981 0.327898993927 176.341217899432 83 28 540 11392 4536896
+vector 203 AODVgrayhole.host[5].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+203	1838548 2421 1162 111981 0.327898993927 176.341217899432 83 28 540 11392 4536896
+vector 204 AODVgrayhole.host[5].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+204	1840969 4646 1162 111981 0.327898993927 176.341217899432 166 0 1 83 83
+vector 205 AODVgrayhole.host[5].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+205	1845615 2421 1162 111981 0.327898993927 176.341217899432 83 28 540 11392 4536896
+vector 206 AODVgrayhole.host[5].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+206	1848036 2373 1162 111981 0.327898993927 176.341217899432 83 0 0.098387522768 0.197870645635 0.019166064009985
+vector 207 AODVgrayhole.host[5].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+207	1850409 2421 1162 111981 0.327898993927 176.341217899432 83 51 563 13301 5104835
+vector 208 AODVgrayhole.host[16].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+208	1852830 418 1210 21522 0.327947505055 15.32973539636 15 28 32 472 14880
+vector 209 AODVgrayhole.host[16].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+209	1853248 530 1212 21524 0.327947505055 15.32973539636 19 28 52 884 42896
+vector 210 AODVgrayhole.host[16].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+210	1853778 530 1212 21524 0.327947505055 15.32973539636 19 28 52 884 42896
+vector 211 AODVgrayhole.host[16].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+211	1854308 1022 1212 21524 0.327947505055 15.32973539636 38 0 1 19 19
+vector 212 AODVgrayhole.host[16].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+212	1855330 530 1212 21524 0.327947505055 15.32973539636 19 28 52 884 42896
+vector 213 AODVgrayhole.host[16].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+213	1855860 523 1212 21524 0.327947505055 15.32973539636 19 0 0.00033270806 0.00033270806 1.1069465318896e-07
+vector 214 AODVgrayhole.host[16].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+214	1856383 530 1212 21524 0.327947505055 15.32973539636 19 51 75 1321 93611
+vector 215 AODVgrayhole.host[13].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+215	1856913 8559 1251 112734 0.3282475027 176.446340904831 296 51 563 31872 8376888
+vector 216 AODVgrayhole.host[13].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+216	1865472 5663 1251 112734 0.3282475027 176.446340904831 196 28 64 9680 490688
+vector 217 AODVgrayhole.host[13].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+217	1871135 5041 1253 112736 0.3282475027 176.446340904831 174 20 44 5584 180480
+vector 218 AODVgrayhole.host[13].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+218	1876176 5107 1253 112736 0.3282475027 176.446340904831 174 1 174 15225 1771175
+vector 219 AODVgrayhole.host[0].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+219	1881283 8341 1256 112744 0.328247571358 176.446340923782 288 51 563 31308 8336184
+vector 220 AODVgrayhole.host[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+220	1889624 5400 1256 112744 0.328247571358 176.446340923782 187 28 64 9212 466352
+vector 221 AODVgrayhole.host[0].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+221	1895024 4781 1258 112746 0.328247571358 176.446340923782 165 20 44 5296 171264
+vector 222 AODVgrayhole.host[0].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+222	1899805 4838 1258 112746 0.328247571358 176.446340923782 165 1 165 13695 1511015
+vector 223 AODVgrayhole.host[14].wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+223	1904643 592 1266 25108 0.328247708277 23.011503296277 21 51 563 4879 2283101
+vector 224 AODVgrayhole.host[14].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+224	1905235 248 1266 21447 0.328247708277 15.329561958654 9 28 52 396 18576
+vector 225 AODVgrayhole.host[14].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+225	1905483 168 1268 21449 0.328247708277 15.329561958654 6 32 32 192 6144
+vector 226 AODVgrayhole.host[14].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+226	1905651 162 1268 21449 0.328247708277 15.329561958654 6 1 6 21 91
+vector 227 AODVgrayhole.receiver.wlan[0].mac rcvdPkFromLl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+227	1905813 5290 1271 112305 0.328247757187 176.343780490889 182 51 563 20470 5629390
+vector 228 AODVgrayhole.receiver.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+228	1911103 4540 1271 112305 0.328247757187 176.343780490889 156 28 540 15076 4727184
+vector 229 AODVgrayhole.receiver.udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+229	1915643 4118 1273 112307 0.328247757187 176.343780490889 141 28 520 11836 4185584
+vector 230 AODVgrayhole.receiver.udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+230	1919761 4136 1273 112307 0.328247757187 176.343780490889 141 1 141 10011 944371
+vector 231 AODVgrayhole.receiver.udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+231	1923897 1830 1275 112708 0.328247757187 176.445976145196 63 20 44 1868 56656
+vector 232 AODVgrayhole.receiver.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+232	1925727 256 1276 111505 0.328247757187 176.331887751782 9 28 28 252 7056
+vector 233 AODVgrayhole.receiver.wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+233	1925983 2086 1277 112710 0.328247757187 176.445976145196 72 28 64 3380 163632
+vector 234 AODVgrayhole.receiver.wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+234	1928069 2086 1277 112710 0.328247757187 176.445976145196 72 28 64 3380 163632
+vector 235 AODVgrayhole.receiver.wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+235	1930155 4029 1277 112710 0.328247757187 176.445976145196 144 0 1 72 72
+vector 236 AODVgrayhole.receiver.wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+236	1934184 2087 1277 112710 0.328247757187 176.445976145196 72 28 64 3380 163632
+vector 237 AODVgrayhole.receiver.wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+237	1936271 2040 1277 112710 0.328247757187 176.445976145196 72 0 0.098498452791 0.098831216051 0.0097020559336081
+vector 238 AODVgrayhole.receiver.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+238	1938311 2087 1277 112710 0.328247757187 176.445976145196 72 51 87 5036 357200
+vector 239 AODVgrayhole.host[6].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+239	1940398 1187 1398 112004 0.328334844654 176.3412601899 41 28 32 1308 41744
+vector 240 AODVgrayhole.host[6].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+240	1941585 1216 1400 112006 0.328334844654 176.3412601899 42 28 52 2156 111248
+vector 241 AODVgrayhole.host[6].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+241	1942801 1216 1400 112006 0.328334844654 176.3412601899 42 28 52 2156 111248
+vector 242 AODVgrayhole.host[6].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+242	1944017 2348 1400 112006 0.328334844654 176.3412601899 84 0 1 42 42
+vector 243 AODVgrayhole.host[6].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+243	1946365 1216 1400 112006 0.328334844654 176.3412601899 42 28 52 2156 111248
+vector 244 AODVgrayhole.host[6].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+244	1947581 1174 1400 112006 0.328334844654 176.3412601899 42 0 0 0 0
+vector 245 AODVgrayhole.host[6].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+245	1948755 1216 1400 112006 0.328334844654 176.3412601899 42 51 75 3122 232642
+vector 246 AODVgrayhole.host[3].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+246	1949971 1536 1487 112179 0.328775269707 176.34343171194 53 28 44 1680 53568
+vector 247 AODVgrayhole.host[3].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+247	1951507 1796 1489 112181 0.328775269707 176.34343171194 62 28 64 3012 150544
+vector 248 AODVgrayhole.host[3].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+248	1953303 1796 1489 112181 0.328775269707 176.34343171194 62 28 64 3012 150544
+vector 249 AODVgrayhole.host[3].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+249	1955099 3468 1489 112181 0.328775269707 176.34343171194 124 0 1 62 62
+vector 250 AODVgrayhole.host[3].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+250	1958567 1796 1489 112181 0.328775269707 176.34343171194 62 28 64 3012 150544
+vector 251 AODVgrayhole.host[3].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+251	1960363 1747 1489 112181 0.328775269707 176.34343171194 62 0 0.093388281417 0.093388281417 0.0087213711060208
+vector 252 AODVgrayhole.host[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+252	1962110 1796 1489 112181 0.328775269707 176.34343171194 62 51 87 4438 321894
+vector 253 AODVgrayhole.host[15].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+253	1963906 420 1565 22619 0.329261506008 15.335413250823 15 28 32 464 14400
+vector 254 AODVgrayhole.host[15].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+254	1964326 711 1567 24994 0.329261506008 23.006901906127 25 28 540 4628 2082512
+vector 255 AODVgrayhole.host[15].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+255	1965037 711 1567 24994 0.329261506008 23.006901906127 25 28 540 4628 2082512
+vector 256 AODVgrayhole.host[15].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+256	1965748 1358 1567 24994 0.329261506008 23.006901906127 50 0 1 25 25
+vector 257 AODVgrayhole.host[15].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+257	1967106 711 1567 24994 0.329261506008 23.006901906127 25 28 540 4628 2082512
+vector 258 AODVgrayhole.host[15].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+258	1967817 692 1567 24994 0.329261506008 23.006901906127 25 0 0.000332593106 0.000332593106 1.1061817415873e-07
+vector 259 AODVgrayhole.host[15].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+259	1968509 711 1567 24994 0.329261506008 23.006901906127 25 51 563 5203 2308625
+vector 260 AODVgrayhole.host[12].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+260	1969220 1249 1590 112129 0.329363819489 176.343262386747 43 28 32 1372 43792
+vector 261 AODVgrayhole.host[12].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+261	1970469 1335 1592 112131 0.329363819489 176.343262386747 46 28 52 2316 118224
+vector 262 AODVgrayhole.host[12].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+262	1971804 1335 1592 112131 0.329363819489 176.343262386747 46 28 52 2316 118224
+vector 263 AODVgrayhole.host[12].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+263	1973139 2578 1592 112131 0.329363819489 176.343262386747 92 0 1 46 46
+vector 264 AODVgrayhole.host[12].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+264	1975717 1335 1592 112131 0.329363819489 176.343262386747 46 28 52 2316 118224
+vector 265 AODVgrayhole.host[12].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+265	1977052 1289 1592 112131 0.329363819489 176.343262386747 46 0 0 0 0
+vector 266 AODVgrayhole.host[12].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+266	1978341 1335 1592 112131 0.329363819489 176.343262386747 46 51 75 3374 249094
+vector 267 AODVgrayhole.host[4].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+267	1979676 223 1713 22392 0.330121090031 15.333101962399 8 32 32 256 8192
+vector 268 AODVgrayhole.host[4].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+268	1979899 223 1715 22394 0.330121090031 15.333101962399 8 52 52 416 21632
+vector 269 AODVgrayhole.host[4].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+269	1980122 223 1715 22394 0.330121090031 15.333101962399 8 52 52 416 21632
+vector 270 AODVgrayhole.host[4].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+270	1980345 430 1715 22394 0.330121090031 15.333101962399 16 0 1 8 8
+vector 271 AODVgrayhole.host[4].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+271	1980775 223 1715 22394 0.330121090031 15.333101962399 8 52 52 416 21632
+vector 272 AODVgrayhole.host[4].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+272	1980998 215 1715 22394 0.330121090031 15.333101962399 8 0 0 0 0
+vector 273 AODVgrayhole.host[4].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+273	1981213 223 1715 22394 0.330121090031 15.333101962399 8 75 75 600 45000
+vector 274 AODVgrayhole.host[17].udp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+274	1981436 418 1850 21274 0.430800769358 15.32761597675 15 28 36 488 15968
+vector 275 AODVgrayhole.host[17].udp passedUpPk:vector(count) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed up, vector(count)"
+275	1981854 409 1850 21274 0.430800769358 15.32761597675 15 1 15 120 1240
+vector 276 AODVgrayhole.host[13].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+276	1982263 1018 2568 111078 0.808631758632 175.81319419817 35 28 32 1112 35360
+vector 277 AODVgrayhole.host[13].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+277	1983281 1074 2570 111080 0.808631758632 175.81319419817 37 28 52 1868 95408
+vector 278 AODVgrayhole.host[13].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+278	1984355 1074 2570 111080 0.808631758632 175.81319419817 37 28 52 1868 95408
+vector 279 AODVgrayhole.host[13].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+279	1985429 2074 2570 111080 0.808631758632 175.81319419817 74 0 1 37 37
+vector 280 AODVgrayhole.host[13].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+280	1987503 1074 2570 111080 0.808631758632 175.81319419817 37 28 52 1868 95408
+vector 281 AODVgrayhole.host[13].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+281	1988577 1037 2570 111080 0.808631758632 175.81319419817 37 0 0 0 0
+vector 282 AODVgrayhole.host[13].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+282	1989614 1074 2570 111080 0.808631758632 175.81319419817 37 51 75 2719 200909
+vector 283 AODVgrayhole.host[11].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+283	1990688 22767 2824 114378 0.809550542037 179.004601024389 754 51 563 343030 187491106
+vector 284 AODVgrayhole.host[10].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+284	2013455 2781 2830 25374 0.809550729457 25.004601211809 96 51 563 45092 24802120
+vector 285 AODVgrayhole.host[4].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+285	2016236 1977 2832 25376 0.809550802351 25.004601284703 69 51 563 30875 16867813
+vector 286 AODVgrayhole.host[1].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+286	2018213 22196 2834 114384 0.809550886621 179.004601368973 738 51 563 298026 159639098
+vector 287 AODVgrayhole.sender.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+287	2040409 10954 2845 114389 0.8095509321 179.004601414452 363 51 563 164457 89786259
+vector 288 AODVgrayhole.host[12].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+288	2051363 21253 2847 114391 0.809551001997 179.004601484349 705 51 563 285923 153243945
+vector 289 AODVgrayhole.host[0].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+289	2072616 1047 3021 111220 0.809932055991 175.815328693776 36 28 32 1140 36144
+vector 290 AODVgrayhole.host[0].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+290	2073663 1160 3023 111222 0.809932055991 175.815328693776 40 28 52 1972 99280
+vector 291 AODVgrayhole.host[0].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+291	2074823 1160 3023 111222 0.809932055991 175.815328693776 40 28 52 1972 99280
+vector 292 AODVgrayhole.host[0].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+292	2075983 2240 3023 111222 0.809932055991 175.815328693776 80 0 1 40 40
+vector 293 AODVgrayhole.host[0].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+293	2078223 1160 3023 111222 0.809932055991 175.815328693776 40 28 52 1972 99280
+vector 294 AODVgrayhole.host[0].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+294	2079383 1120 3023 111222 0.809932055991 175.815328693776 40 0 0 0 0
+vector 295 AODVgrayhole.host[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+295	2080503 1160 3023 111222 0.809932055991 175.815328693776 40 51 75 2892 211152
+vector 296 AODVgrayhole.host[14].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+296	2081663 112 3323 22289 0.812079830131 15.332862826346 4 32 32 128 4096
+vector 297 AODVgrayhole.host[14].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+297	2081775 112 3325 22291 0.812079830131 15.332862826346 4 52 52 208 10816
+vector 298 AODVgrayhole.host[14].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+298	2081887 112 3325 22291 0.812079830131 15.332862826346 4 52 52 208 10816
+vector 299 AODVgrayhole.host[14].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+299	2081999 216 3325 22291 0.812079830131 15.332862826346 8 0 1 4 4
+vector 300 AODVgrayhole.host[14].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+300	2082215 112 3325 22291 0.812079830131 15.332862826346 4 52 52 208 10816
+vector 301 AODVgrayhole.host[14].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+301	2082327 108 3325 22291 0.812079830131 15.332862826346 4 0 0 0 0
+vector 302 AODVgrayhole.host[14].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+302	2082435 112 3325 22291 0.812079830131 15.332862826346 4 75 75 300 22500
+vector 303 AODVgrayhole.host[17].udp packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+303	2082547 251 3348 21497 0.812128212904 15.329590323211 9 32 32 288 9216
+vector 304 AODVgrayhole.host[17].wlan[0].mac rcvdPkFromHl:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+304	2082798 251 3350 21499 0.812128212904 15.329590323211 9 52 52 468 24336
+vector 305 AODVgrayhole.host[17].wlan[0].mac.queue packetPushed:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet pushed, vector(packetBytes)"
+305	2083049 251 3350 21499 0.812128212904 15.329590323211 9 52 52 468 24336
+vector 306 AODVgrayhole.host[17].wlan[0].mac.queue queueLength:vector ETV
+attr interpolationmode sample-hold
+attr source "count(packetPushed) - count(packetPopped) - count(packetRemoved) - count(packetDropped)"
+attr title "queue length, vector"
+306	2083300 484 3350 21499 0.812128212904 15.329590323211 18 0 1 9 9
+vector 307 AODVgrayhole.host[17].wlan[0].mac.queue packetPopped:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "packet popped, vector(packetBytes)"
+307	2083784 251 3350 21499 0.812128212904 15.329590323211 9 52 52 468 24336
+vector 308 AODVgrayhole.host[17].wlan[0].mac.queue queueingTime:vector ETV
+attr interpolationmode none
+attr source queueingTime(packetPopped)
+attr title "queueing times, vector"
+attr unit s
+308	2084035 242 3350 21499 0.812128212904 15.329590323211 9 0 0 0 0
+vector 309 AODVgrayhole.host[17].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+309	2084277 251 3350 21499 0.812128212904 15.329590323211 9 75 75 675 50625
+vector 310 AODVgrayhole.host[7].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+310	2084528 54 3747 4856 1.006638387611 1.335312260889 2 28 28 56 1568
+vector 311 AODVgrayhole.host[2].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+311	2084582 19300 3801 114171 1.006890600272 178.006902056418 647 51 563 242377 127988807
+vector 312 AODVgrayhole.host[7].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+312	2103882 27 3886 3886 1.011016401689 1.011016401689 1 28 28 28 784
+vector 313 AODVgrayhole.sender.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+313	2103909 27 3942 3942 1.011269214355 1.011269214355 1 28 28 28 784
+vector 314 AODVgrayhole.ntu_Grayholer.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+314	2103936 5942 4029 114212 1.011854495009 178.0092024856 202 51 563 72106 37790386
+vector 315 AODVgrayhole.ntu_Grayholer.ipv4.ip rcvdPkt:vector ETV
+attr interpolationmode none
+attr title "Number of packet received, vector"
+315	2109878 8738 4163 114387 1.016456120341 179.004601381822 290 1 290 42195 8171765
+vector 316 AODVgrayhole.ntu_Grayholer.ipv4.ip droppings:vector ETV
+attr interpolationmode none
+attr title "Number of drops, vector"
+316	2118616 4588 4293 114387 1.018756933007 179.004601381822 154 1 154 11935 1229305
+vector 317 AODVgrayhole.host[5].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+317	2123204 86 4405 111039 1.328500520447 175.81305051282 3 28 28 84 2352
+vector 318 AODVgrayhole.host[3].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+318	2123290 8179 4452 114222 1.328752826751 178.009202735943 275 51 563 88597 45331523
+vector 319 AODVgrayhole.host[6].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+319	2131469 7834 4454 114217 1.328752827962 178.009202647852 263 51 563 87645 45258831
+vector 320 AODVgrayhole.host[13].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+320	2139303 2896 4458 112110 1.32875302922 176.341899422327 100 51 563 17684 7337236
+vector 321 AODVgrayhole.host[0].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+321	2142199 2941 4460 112113 1.328753097878 176.341899441278 101 51 563 17795 7347157
+vector 322 AODVgrayhole.host[14].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+322	2145140 344 4464 25108 1.328753234797 23.011503296277 12 51 563 4276 2241548
+vector 323 AODVgrayhole.host[5].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+323	2145484 110 4583 42210 1.33035047195 50.248276128569 4 28 28 112 3136
+vector 324 AODVgrayhole.host[15].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+324	2145594 26 4627 4627 1.33060314775 1.33060314775 1 28 28 28 784
+vector 325 AODVgrayhole.receiver.wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+325	2145620 750 4746 111671 1.33118858681 176.334224256735 26 51 71 1806 126186
+vector 326 AODVgrayhole.host[15].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+326	2146370 54 4815 5215 1.335059667783 1.339646814388 2 28 28 56 1568
+vector 327 AODVgrayhole.host[5].wlan[0].mac packetDropNotAddressedToUs:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, vector(packetBytes)"
+327	2146424 6916 4982 114224 1.335897529795 178.009202759016 232 51 563 71236 36063968
+vector 328 AODVgrayhole.ntu_Grayholer.ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+328	2153340 170 5309 94025 1.339899338693 134.336832008663 6 28 28 168 4704
+vector 329 AODVgrayhole.sender.ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+329	2153510 82 6016 65314 1.3441084276 76.820567856243 3 28 28 84 2352
+vector 330 AODVgrayhole.host[11].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+330	2153592 27 6062 6062 1.344361042219 1.344361042219 1 28 28 28 784
+vector 331 AODVgrayhole.host[3].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+331	2153619 118 6327 111540 1.345302392549 176.332140530731 4 28 28 112 3136
+vector 332 AODVgrayhole.host[11].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+332	2153737 145 6766 112340 1.348011588766 176.344500298867 5 28 28 140 3920
+vector 333 AODVgrayhole.host[3].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+333	2153882 111 6791 39744 1.34807311021 50.147026509155 4 28 28 112 3136
+vector 334 AODVgrayhole.host[9].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+334	2153993 294 6841 113928 1.348264291405 177.340619538011 10 28 28 280 7840
+vector 335 AODVgrayhole.host[16].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+335	2154287 55 6890 10383 1.348325571704 2.348325571704 2 28 28 56 1568
+vector 336 AODVgrayhole.host[13].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+336	2154342 27 9076 9076 2.334765163816 2.334765163816 1 28 28 28 784
+vector 337 AODVgrayhole.host[9].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+337	2154369 86 9910 93997 2.340122076195 134.336579456774 3 28 28 84 2352
+vector 338 AODVgrayhole.host[16].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+338	2154455 56 10514 10962 2.349705342624 3.349705342624 2 28 28 56 1568
+vector 339 AODVgrayhole.receiver.app[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+339	2154511 455 22895 84422 15.342647738493 108.011503522276 15 512 512 7680 3932160
+vector 340 AODVgrayhole.receiver.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+340	2154966 31722 22895 114452 0.1 180 1800 0 40960 614400 25165824000
+vector 341 AODVgrayhole.receiver.app[0] endToEndDelay:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "end-to-end delay, vector"
+attr unit s
+341	2186688 620 22895 84422 15.342647738493 108.011503522276 15 0.011503345187 1.473937224259 2.877118621071 3.1424786884423
+vector 342 AODVgrayhole.receiver.app[0] rcvdPkSeqNo:vector ETV
+attr interpolationmode none
+attr source appPkSeqNo(packetReceived)
+attr title "received packet sequence number, vector"
+342	2187308 445 22895 84422 15.342647738493 108.011503522276 15 15 108 925 81699
+vector 343 AODVgrayhole.host[2].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+343	2187753 150 26699 113896 26.346818065121 177.340367056968 5 28 28 140 3920
+vector 344 AODVgrayhole.ntu_Grayholer.ipv4.ip packetDropHopLimitReached:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetDropReasonIsHopLimitReached(packetDropped)
+attr title "packet drop: hop limit reached, vector(packetBytes)"
+344	2187903 30 34172 34172 40.073620887636 40.073620887636 1 540 540 540 291600
+vector 345 AODVgrayhole.host[6].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+345	2187933 29 39753 39753 50.147026510366 50.147026510366 1 28 28 28 784
+vector 346 AODVgrayhole.host[13].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+346	2187962 29 39764 39764 50.147026711624 50.147026711624 1 28 28 28 784
+vector 347 AODVgrayhole.host[0].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+347	2187991 58 39774 71956 50.147026780282 84.337302115067 2 28 28 56 1568
+vector 348 AODVgrayhole.host[8].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+348	2188049 58 43519 65596 50.358711583009 76.826365242361 2 28 28 56 1568
+vector 349 AODVgrayhole.host[12].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+349	2188107 58 64011 66761 76.331754216979 77.331754216979 2 28 28 56 1568
+vector 350 AODVgrayhole.host[1].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+350	2188165 58 64837 65635 76.815947149356 76.826618065888 2 28 28 56 1568
+vector 351 AODVgrayhole.host[8].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+351	2188223 29 65383 65383 76.820820299542 76.820820299542 1 28 28 28 784
+vector 352 AODVgrayhole.host[1].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+352	2188252 29 65733 65733 76.828411441381 76.828411441381 1 28 28 28 784
+vector 353 AODVgrayhole.host[12].ipv4.arp arpRequestSent:vector(packetBytes) ETV
+attr source arpRequestSent
+attr title "ARP request sent, vector(packetBytes)"
+353	2188281 29 66864 66864 77.334130029568 77.334130029568 1 28 28 28 784
+vector 354 AODVgrayhole.host[0].ipv4.arp arpReplySent:vector(packetBytes) ETV
+attr source arpReplySent
+attr title "ARP replies sent, vector(packetBytes)"
+354	2188310 58 68886 71808 83.333755405805 84.333755405805 2 28 28 56 1568
+vector 355 AODVgrayhole.sender.app[0] throughput:vector ETV
+attr source throughput(packetReceived)
+attr title "throughput, vector"
+attr unit bps
+355	2188368 32743 114452 114452 0.1 180 1800 0 0 0 0

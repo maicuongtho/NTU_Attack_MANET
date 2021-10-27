@@ -4,3 +4,5 @@ CHẠY TRÊN NỀN [INET Framework 4](https://inet.omnetpp.org/) VÀ [OMNET++5.6
 ***
 Tác giả: Mai Cường Thọ - Khoa Công nghệ thông tin - Đại học Nha Trang (thomc@ntu.edu.vn)
 ***
+Vui lòng gửi Email cho tác giả đề nhận bản Realease Final
+***
